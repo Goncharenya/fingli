@@ -6,7 +6,7 @@ const autoprefixer = require("gulp-autoprefixer");
 const csso = require('gulp-postcss');
 const rename = require('gulp-rename');
 const browserSync = require('browser-sync').create();
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 
 gulp.task('server', function () {
     browserSync.init({
