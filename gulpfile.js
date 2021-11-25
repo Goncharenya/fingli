@@ -5,7 +5,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("gulp-autoprefixer");
 const csso = require('gulp-postcss');
 const rename = require('gulp-rename');
-const browserSync = require('browser-sync').create();
+const browserSync = require('browser-sync');
 const sass = require('gulp-sass')(require('sass'));
 
 gulp.task('server', function () {
@@ -13,17 +13,14 @@ gulp.task('server', function () {
         server: {
             baseDir: 'src'
         }
-    })
-})
+    });
+    gulp.watch('src/*.html').on('change', browserSync.reload);
+});
 
 gulp.task('style', function () {
     return gulp.src("src/scss/style.scss")
         .pipe(sass())
         .pipe(plumber())
-        .pipe(postcss([
-            autoprefixer(),
-            csso()
-        ]))
         .pipe(rename("style.min.css"))
         .pipe(sourcemap.write("."))
         .pipe(gulp.dest("src/css"))
@@ -31,8 +28,7 @@ gulp.task('style', function () {
 })
 
 gulp.task('watch', function () {
-    gulp.watch('src/css/*.+scss', gulp.parallel('style'));
-    gulp.watch('src/*.html').on('change', browserSync.reload);
+    gulp.watch('src/scss/*.+scss', gulp.parallel('style'));
 
 })
 
