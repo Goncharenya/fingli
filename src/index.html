@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <title>FinGli</title>
@@ -7,49 +7,53 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="body">
-<header class="header">
-    <nav class="navigation">
-        <ul class="menu navigation__item list">
-            <li class="menu__item"><a href="" class="menu__link">START PROJECT</a></li>
-            <li class="menu__item"><a href="" class="menu__link">ПАРТНЁРАМ</a></li>
-            <li class="menu__item"><a href="" class="menu__link">КАРЬЕРА</a></li>
-        </ul>
-        <div class="header__logo logo navigation__item">
+<nav class="navigation header__menu">
+    <ul class="menu navigation__item list wrap">
+        <li class="menu__item">
+            <button class="menu__link btn btn-start">START PROJECT</button>
+        </li>
+        <li class="menu__item"><a href="" class="menu__link">ПАРТНЁРАМ</a></li>
+        <li class="menu__item"><a href="" class="menu__link">КАРЬЕРА</a></li>
+
+        <li class="header__logo logo navigation__item">
             <a class="logo__link" href="index.html">
                 <svg class="logo__icon" width="98" height="29" viewBox="0 0 98 29">
                     <use xlink:href="img/sprite.svg#logo"></use>
                 </svg>
             </a>
-        </div>
-        <ul class="menu navigation__item list">
-            <li class="menu__item"><a href="" class="menu__link">Компания</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Кейсы</a></li>
-            <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
-        </ul>
-    </nav>
-    <div class="slogan">
-        <div class="slogan__item">
+        </li>
+
+        <li class="menu__item"><a href="" class="menu__link">Компания</a></li>
+        <li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
+        <li class="menu__item"><a href="" class="menu__link">Кейсы</a></li>
+        <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+    </ul>
+</nav>
+<header class="header">
+
+    <div class="slogan wrap">
+        <div class="slogan__item slogan__item-question">
             <div class="slogan__text">
-                Хотите сказать, Fingli сильнее остальных?
+                &ndash; Хотите сказать, Fingli сильнее остальных?
             </div>
-            <div class="slogan__img">
-                <svg class="logo__icon" width="212" height="212" viewBox="0 0 212 212">
-                    <use xlink:href="img/sprite.svg#owl"></use>
-                </svg>
-            </div>
+            <!--            <div class="slogan__img">-->
+            <!--                <svg class="logo__icon" width="212" height="212" viewBox="0 0 212 212">-->
+            <!--                    <use xlink:href="img/sprite.svg#owl"></use>-->
+            <!--                </svg>-->
+            <!--            </div>-->
         </div>
-        <div class="slogan__item">
+        <div class="slogan__item slogan__item-answer">
             <div class="slogan__text">
-                Нет. Легче, быстрее, соблазнительнее.
+                <p> Нет. Легче, быстрее, &ndash;</p>
+                <p class="special">соблазнительнее.</p>
             </div>
-            <div class="slogan__img">
-                <svg class="logo__icon" width="195" height="195" viewBox="0 0 195 195">
-                    <use xlink:href="img/sprite.svg#robot"></use>
-                </svg>
-            </div>
+            <!--            <div class="slogan__img">-->
+            <!--                <svg class="logo__icon robot-svg" width="195" height="195" viewBox="0 0 195 195">-->
+            <!--                    <use xlink:href="img/sprite.svg#robot"></use>-->
+            <!--                </svg>-->
+            <!--            </div>-->
         </div>
-        <span class="author">Клиент — Максим Кеноби</span>
+        <span class="slogan__author">Клиент — Максим Кеноби</span>
     </div>
 </header>
 <main class="main">
@@ -58,143 +62,176 @@
             <p>Fingli Group на рынке IT-индустрии с 2013 года. Наша команда поможет вам реализовать любые цели в сфере
                 разработки и web-продвижения.
             </p>
-            <div class="company__img">
+            <div class="company__img company__img-office">
                 <img src="img/office_1.jpg" alt="мечтательное фото офиса" srcset="img/office_1@2x.jpg 2x">
             </div>
         </div>
         <div class="company__description">
-            <p>Нас привлекают сложные и амбициозные проекты, требующие комплексных решений. Для нас не существует
-                трудностей - любую задачу мы разложим на простые, понятные и решаемые этапы.
+            <div class="company__description-test">
+                <p>Нас привлекают сложные и амбициозные проекты, требующие комплексных решений. Для нас не существует
+                    трудностей - любую задачу мы разложим на простые, понятные и решаемые этапы.
+                </p>
 
-                Вам не нужно переживать и контролировать ход проекта, пытаясь разобраться в вопросах программирования.
-                Наша задача - максимально погрузиться в специфику вашего бизнеса, рационально использовать бюджет и
-                выдать наиболее эффективный для вас результат.
-            </p>
+                <p> Вам не нужно переживать и контролировать ход проекта, пытаясь разобраться в вопросах
+                    программирования.
+                    Наша задача - максимально погрузиться в специфику вашего бизнеса, рационально использовать бюджет и
+                    выдать наиболее эффективный для вас результат.
+                </p>
+            </div>
             <div class="company__img">
                 <img src="img/office.jpg" alt="мечтательное фото офиса" srcset="img/office@2x.jpg 2x">
+                <a href="#" class="company__img-desc">компания</a>
             </div>
         </div>
     </section>
 
     <section class="services wrap">
         <div class="services__box">
-            <div class="services__item">
-                <img src="img/services.jpg" srcset="img/services@2x.jpg 2x" alt="да-да, именно тут творят чудеса IT">
+            <div class="services__item services__item-img">
+                <img class="services__img" src="img/services.jpg" srcset="img/services@2x.jpg 2x"
+                     alt="да-да, именно тут творят чудеса IT">
+                <a href="#" class="services__img-desc">услуги</a>
             </div>
             <div class="services__item">
-                <h3 class="services__title-list">Оказываем профессиональный подход к работе по следующим
+                <h3 class="services__title-list">Оказываем профессиональный подход к <br> работе по следующим
                     направлениям</h3>
-                <ul class="services__list">
-                    <li class="services__list-item"><a href="" class="services__list-link">ВЕБ-РАЗРАБОТКА</a></li>
-                    <li class="services__list-item"><a href="" class="services__list-link">КОНСАЛТИНГ И АУДИТ</a></li>
-                    <li class="services__list-item"><a href="" class="services__list-link">ПРОДВИЖЕНИЕ</a></li>
+                <ul class="services__list list">
+                    <li class="services__list-item"><a href="" class="services__list-link">ВЕБ-РАЗРАБОТКА</a>
+                        <svg class="owl-svg" width="71" height="49" viewBox="0 0 71 49">
+                            <use xlink:href="img/sprite.svg#owl_white"></use>
+                        </svg>
+                    </li>
+                    <li class="services__list-item"><a href="" class="services__list-link">КОНСАЛТИНГ И АУДИТ</a>
+                        <svg class="owl-svg" width="71" height="49" viewBox="0 0 71 49">
+                            <use xlink:href="img/sprite.svg#owl_white"></use>
+                        </svg>
+                    </li>
+                    <li class="services__list-item"><a href="" class="services__list-link">ПРОДВИЖЕНИЕ</a>
+                        <svg class="owl-svg" width="71" height="49" viewBox="0 0 71 49">
+                            <use xlink:href="img/sprite.svg#owl_white"></use>
+                        </svg>
+                    </li>
                 </ul>
             </div>
         </div>
-        <h2 class="services__title">
-            <span>ИСПОЛЬЗУЕМ ЛУЧШИЕ РЕШЕНИЯ</span>
-            <span>СОВРЕМЕННОГО РЫНКА</span>
+
+        <h2 class="services__title title-section">
+            <span class="title-section__up title">ИСПОЛЬЗУЕМ ЛУЧШИЕ рЕШЕНИЯ</span>
+            <span class="title-section__down">СОВРЕМЕННОГО РЫНКА</span>
         </h2>
+
         <div class="resolution">
+            <div class="resolution__box">
 
-            <!--            resolution__item-->
+                <!--            resolution__item-->
 
-            <div class="resolution__item">
-                <h3 class="resolution__title">
-                    FRAMEWORKS AND SYSTEMS
-                </h3>
-                <div class="resolution__desk">
-                    Yii, Laravel, Bitrix, Индивидуальные CMS, Drupal, HostCMS, UMI, Netcat, AmoCMS, SimplaCMS
+                <div class="resolution__item">
+                    <h3 class="resolution__title">
+                        FRAMEWORKS AND <br> SYSTEMS
+                    </h3>
+                    <div class="resolution__desk">
+                        Yii, Laravel, Bitrix, Индивидуальные CMS, Drupal, HostCMS, UMI, Netcat, AmoCMS, SimplaCMS
+                    </div>
                 </div>
-            </div>
 
-            <div class="resolution__item">
-                <h3 class="resolution__title">
-                    BACKEND
-                </h3>
-                <div class="resolution__desk">
-                    PHP 5-8
+                <div class="resolution__item">
+                    <h3 class="resolution__title">
+                        BACKEND
+                    </h3>
+                    <div class="resolution__desk">
+                        PHP 5-8
+                    </div>
                 </div>
-            </div>
 
-            <div class="resolution__item">
-                <h3 class="resolution__title">
-                    DATA BASE
-                </h3>
-                <div class="resolution__desk">
-                    Mysql, Postgresql, MSSQL, ClickHouse
+                <div class="resolution__item">
+                    <h3 class="resolution__title">
+                        DATA BASE
+                    </h3>
+                    <div class="resolution__desk">
+                        Mysql, Postgresql, MSSQL, ClickHouse
+                    </div>
                 </div>
-            </div>
 
-            <div class="resolution__item">
-                <h3 class="resolution__title">
-                    FRONTEND
-                </h3>
-                <div class="resolution__desk">
-                    JS, HTML, CSS
+                <div class="resolution__item">
+                    <h3 class="resolution__title">
+                        FRONTEND
+                    </h3>
+                    <div class="resolution__desk">
+                        JS, HTML, CSS
+                    </div>
                 </div>
-            </div>
 
-            <div class="resolution__item">
-                <h3 class="resolution__title">
-                    SERVICES AND TOOLS
-                </h3>
-                <div class="resolution__desk">
-                    Git, Trello, Собственная внутренняя система управления проектами
+                <div class="resolution__item">
+                    <h3 class="resolution__title">
+                        SERVICES AND TOOLS
+                    </h3>
+                    <div class="resolution__desk">
+                        Git, Trello, Собственная внутренняя система управления проектами
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="cooperation-models wrap">
-        <h2 class="cooperation-models__title">ИСКЛЮЧИТЕЛЬНАЯ РЕЗУЛЬТАТИВНОСТЬ</h2>
-        <p class="cooperation-models__description">
-            Работаем по самым удобным и популярным моделям сотрудничества. Именно этот
-            подход позволяет нам реализовывать качественные проекты в самые кратчайшие сроки.
-        </p>
-        <p class="cooperation-models__description">
-            Именно этот подход позволяет нам реализовывать качественные проекты в
-            самые кратчайшие сроки.
-        </p>
+        <div class="cooperation-models__title-box">
+            <h2 class="cooperation-models__title title">МОДЕЛИ СОТРУДНИЧЕСТВА</h2>
+
+            <div class="cooperation-models__description-box">
+                <span>ИСКЛЮЧИТЕЛЬНАЯ РЕЗУЛЬТАТИВНОСТЬ</span>
+                <p class="cooperation-models__description">
+                    Работаем по самым удобным и популярным моделям сотрудничества. Именно этот
+                    подход позволяет нам реализовывать качественные проекты в самые кратчайшие сроки.
+                </p>
+                <p class="cooperation-models__description">
+                    Именно этот подход позволяет нам реализовывать качественные проекты в
+                    самые кратчайшие сроки.
+                </p>
+            </div>
+        </div>
 
         <div class="accordion">
-            <div class="accordion__item">
-                <div class="accordion__title">
-                    <h3>АУТСОРС</h3>
-                    <div class="accordion__icon"></div>
+            <div class="accordion__box">
+                <div class="accordion__item">
+                    <div class="accordion__title">
+                        <h3>АУТСОРС</h3>
+                    </div>
+                    <div class="accordion__description _active">
+                        <p>
+                            Выступим в качестве субпорядчика в ваших проектах, взяв на себя реализацию работ по
+                            разработке
+                            или частичному программированию. Предоставим все мощности, задействуем нужных специалистов и
+                            наладим обратную связь с вашей компанией для достижения наилучшего результата.
+                        </p>
+                    </div>
                 </div>
-                <div class="accordion__description">
-                    <p>
-                        Выступим в качестве субпорядчика в ваших проектах, взяв на себя реализацию работ по разработке
-                        или частичному программированию. Предоставим все мощности, задействуем нужных специалистов и
-                        наладим обратную связь с вашей компанией для достижения наилучшего результата.
-                    </p>
+                <div class="accordion__item">
+                    <div class="accordion__title">
+                        <h3>ЧАСТИЧНАЯ ИНТЕГРАЦИЯ</h3>
+                        <div class="accordion__icon"></div>
+                    </div>
+                    <div class="accordion__description">
+                        <p>
+                            Выступим в качестве субпорядчика в ваших проектах, взяв на себя реализацию работ по
+                            разработке
+                            или частичному программированию. Предоставим все мощности, задействуем нужных специалистов и
+                            наладим обратную связь с вашей компанией для достижения наилучшего результата.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="accordion__item">
-                <div class="accordion__title">
-                    <h3>ЧАСТИЧНАЯ ИНТЕГРАЦИЯ</h3>
-                    <div class="accordion__icon"></div>
-                </div>
-                <div class="accordion__description">
-                    <p>
-                        Выступим в качестве субпорядчика в ваших проектах, взяв на себя реализацию работ по разработке
-                        или частичному программированию. Предоставим все мощности, задействуем нужных специалистов и
-                        наладим обратную связь с вашей компанией для достижения наилучшего результата.
-                    </p>
-                </div>
-            </div>
-            <div class="accordion__item">
-                <div class="accordion__title">
-                    <h3>ПОЛНАЯ ИНТЕГРАЦИЯ</h3>
-                    <div class="accordion__icon"></div>
-                </div>
-                <div class="accordion__description">
-                    <p>
-                        Выступим в качестве субпорядчика в ваших проектах, взяв на себя реализацию работ по разработке
-                        или частичному программированию. Предоставим все мощности, задействуем нужных специалистов и
-                        наладим обратную связь с вашей компанией для достижения наилучшего результата.
-                    </p>
+                <div class="accordion__item">
+                    <div class="accordion__title">
+                        <h3>ПОЛНАЯ ИНТЕГРАЦИЯ</h3>
+                        <div class="accordion__icon"></div>
+                    </div>
+                    <div class="accordion__description">
+                        <p>
+                            Выступим в качестве субпорядчика в ваших проектах, взяв на себя реализацию работ по
+                            разработке
+                            или частичному программированию. Предоставим все мощности, задействуем нужных специалистов и
+                            наладим обратную связь с вашей компанией для достижения наилучшего результата.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -203,6 +240,7 @@
     <!--    кейсы-->
 
     <section class="portfolio wrap">
+        <h2 class="portfolio__box-title title">НАШИ ПРОЕКТЫ</h2>
         <div class="portfolio__box">
             <div class="portfolio__item">
                 <div class="portfolio__preview">
@@ -249,15 +287,20 @@
                 <h3 class="portfolio__title">РЕБРЕНДИНГ <span>SEVERCODE</span></h3>
             </div>
         </div>
-        <button type="button" class="btn">все кейсы
-            <svg width="10" height="10" viewBox="0 0 10 10">
-                <use xlink:href="img/sprite.svg#arr_up"></use>
-            </svg>
-        </button>
+        <a href="#" class="portfolio__link special-link">все кейсы
+        </a>
     </section>
 
     <section class="clients wrap">
-        <h2 class="clients__title">НАШИ КЛИЕНТЫ</h2>
+        <div class="clients__box-title-arrow">
+            <h2 class="clients__title title">НАШИ КЛИЕНТЫ</h2>
+            <div class="clients__title-arrow">
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                    <use xlink:href="img/sprite.svg#arrow_after"></use>
+                </svg>
+                <div class="clients__title-arrow-line"></div>
+            </div>
+        </div>
         <div class="clients__box">
             <ul class="clients__list list">
                 <li class="clients__item">
@@ -287,6 +330,12 @@
                 </li>
             </ul>
         </div>
+        <div class="clients__title-arrow clients__box-title-arrow">
+            <div class="clients__title-arrow-line"></div>
+            <svg class="clients__svg" width="20" height="20" viewBox="0 0 20 20">
+                <use xlink:href="img/sprite.svg#arrow_after"></use>
+            </svg>
+        </div>
     </section>
 
     <!--    start-project-->
@@ -294,65 +343,98 @@
     <section class="start-project">
         <div class="start-project__box">
             <div class="start-project__item">
-                <h2 class="start-project__title">ЗАКАЗАТЬ ПРОЕКТ</h2>
-                <button class="start-project">START PROJECT</button>
+                <h2 class="start-project__title title">ЗАКАЗАТЬ ПРОЕКТ</h2>
+                <button class="btn__start-project">START PROJECT</button>
             </div>
             <div class="start-project__item">
-
+                <div class="start-project__code">
+                    <span>ИДЕАЛЬНЫЙ КОД ПОД ВАШ ПРОЕКТ</span>
+                </div>
+                <p class="start-project__desc">Оказываем профессиональные услуги по программированию для
+                    digital-агенств, рекламных компаний и
+                    дизайн-студий. Мы собрали лучших специалистов своего дела и готовы воплотить ваши проекты в
+                    реальность. </p>
+                <p class="start-project__desc">Для получения индивидуальной презентации по кейсам просто напишите на
+                    нашу почту! Также, будем рады
+                    ответить на все ваши вопросы.
+                </p>
+                <a class="start-project__mail" href="mailto:info@fingli.ru">info@fingli.ru</a>
             </div>
         </div>
     </section>
 
+
+    <!--    blog-->
+
     <section class="blog wrap">
-        <div class="blog__title">РАССКАЗЫВАЕМ О РАБОТЕ
-            <span>В НАШЕМ АВТОРСКОМ БЛОГЕ</span></div>
-        <span>Эксклюзивно и из первых рук</span>
+        <div class="blog__title title-section">
+            <span class="title-section__up">РАССКАЗЫВАЕМ О РАБОТЕ</span>
+            <span class="title-section__down">В НАШЕМ АВТОРСКОМ БЛОГЕ</span>
+        </div>
+        <span class="blog__slogan">Эксклюзивно и из первых рук</span>
         <div class="blog-news">
             <div class="blog-news__item">
                 <img src="img/news.jpg" alt="news" srcset="img/news@2x.jpg 2x" width="388" height="303">
             </div>
-            <div class="blog-news__item blog">
-                <ul class="blog-news__list blog__list list">
+            <div class="blog-news__item blog__list">
+                <ul class="blog-news__list list">
                     <li class="blog__item">
-                        <div class="blog__data">2021</div>
-                        <div class="blog__theme">программирование</div>
-                        <a href="#" class="blog__link">
-                            О костылях без “инвалидности”
-                        </a>
+                        <div class="blog__attribute">
+                            <p class="blog__data">2021</p>
+                            <p class="blog__theme">программирование</p>
+                        </div>
+                        <div class="blog__head">
+                            <a href="#" class="blog__link">
+                                О костылях без “инвалидности”
+                            </a>
+                        </div>
                     </li>
                     <li class="blog__item">
-                        <div class="blog__data">2021</div>
-                        <div class="blog__theme">дизайн</div>
-                        <a href="#" class="blog__link">
-                            Формируем “клиентский” образ мышления
-                        </a>
+                        <div class="blog__attribute">
+                            <p class="blog__data">2021</p>
+                            <p class="blog__theme">дизайн</p>
+                        </div>
+                        <div class="blog__head">
+                            <a href="#" class="blog__link">
+                                Формируем “клиентский” образ мышления
+                            </a>
+                        </div>
                     </li>
                     <li class="blog__item">
-                        <div class="blog__data">2021</div>
-                        <div class="blog__theme">программирование</div>
-                        <a href="#" class="blog__link">
-                            Какой язык выбрать?
-                        </a>
+                        <div class="blog__attribute">
+                            <p class="blog__data">2021</p>
+                            <p class="blog__theme">программирование</p>
+                        </div>
+                        <div class="blog__head">
+                            <a href="#" class="blog__link">
+                                Какой язык выбрать?
+                            </a>
+                        </div>
                     </li>
                     <li class="blog__item">
-                        <div class="blog__data">2021</div>
-                        <div class="blog__theme">развитие</div>
-                        <a href="#" class="blog__link">
-                            Самостоятельное обучение - миф или нет?
-                        </a>
+                        <div class="blog__attribute">
+                            <p class="blog__data">2021</p>
+                            <p class="blog__theme">развитие</p>
+                        </div>
+                        <div class="blog__head">
+                            <a href="#" class="blog__link">
+                                Самостоятельное обучение - миф или нет?
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
-            <button type="button" class="blog__btn">все посты</button>
         </div>
+        <a href="#" class="blog__link special-link">все посты</a>
+
     </section>
 
     <!--    vacancy-->
 
-    <section class="vacancy">
+    <section class="vacancy wrap">
         <div class="vacancy__box">
             <div class="vacancy__box-item">
-                <h2 class="vacancy__title">ПРИГЛАШАЕМ СПЕЦИАЛИСТОВ В НАШУ КОМАНДУ!</h2>
+                <h2 class="vacancy__box-title title">ПРИГЛАШАЕМ СПЕЦИАЛИСТОВ <br>В НАШУ КОМАНДУ!</h2>
                 <div class="vacancy__open">
                     <p class="vacancy__open"><span class="vacancy__num">2</span> открытых вакансии</p>
                 </div>
@@ -362,9 +444,7 @@
                         <div class="vacancy__tags">
                             <button>Проектно</button>
                             <button>Full-time</button>
-                            <svg class="arrow__icon" viewBox="0 0 21 8" width="20">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                            </svg>
+
                         </div>
                     </li>
                     <li class="vacancy__item">
@@ -372,46 +452,58 @@
                         <div class="vacancy__tags">
                             <button>Проектно</button>
                             <button>Full-time</button>
-                            <svg class="arrow__icon" viewBox="0 0 21 8" width="20">
-                                <use xlink:href="img/sprite.svg#arrow"></use>
-                            </svg>
                         </div>
                     </li>
                 </ul>
-                <p>Нет твоего направления?</p>
-                <p>Ты всегда можешь написать нам на почту короткий рассказ о себе, своих достижениях и навыках! Мы рады
+                <p class="vacancy__addition-title">Нет твоего направления?</p>
+                <p class="vacancy__addition">Ты всегда можешь написать нам на почту короткий рассказ о себе, своих достижениях и навыках! Мы рады
                     любому формату связи
                 </p>
-                <a href="mailto:info@fingli.ru">info@fingli.ru</a>
+                <a class="vacancy__mail" href="mailto:info@fingli.ru">info@fingli.ru</a>
             </div>
             <div class="vacancy__box-item">
                 <h3>ПРОКАЧАЕМ DIGITAL СФЕРУ ВМЕСТЕ</h3>
-                <p>Мы ищем талантливых и целеустремленных программистов, которые способны перевернуть все имеющиеся
+                <p class="vacancy__description">Мы ищем талантливых и целеустремленных программистов, которые способны
+                    перевернуть все имеющиеся
                     представления о вебе.
+                </p>
 
-                    Пишешь идеальный код, отлично ориентруешься в современных тенденциях или, быть может, уже создал
+                <p class="vacancy__description">Пишешь идеальный код, отлично ориентруешься в современных тенденциях
+                    или, быть может, уже создал
                     что-то крутое? Откликайся и вместе сделаем этот мир лучше!</p>
             </div>
         </div>
     </section>
 
-<!--    contacts-->
+    <!--    contacts-->
 
     <section class="contacts wrap">
-        <div class="contacts__box">
-            <div class="contacts--item">
-<div class="contacts--mail">
-    <a href="mailto:info@fingli.ru">info@fingli.ru</a>
-</div>
-<div class="contacts--phone">
-    <a href="tel:+78122932229">+7 (812) 293-22-29</a>
-</div>
-<div class="contacts--address">Санкт-Петербург, пр. Энгельса д74, к2</div>
-                <a href="#">ПОСМОТРЕТЬ НА КАРТЕ</a>
+        <h2 class="contacts__title title">КОНТАКТЫ</h2>
+        <div class="contacts__item">
+            <div class="contacts--box">
+                <div class="contacts--mail contacts__click">
+                    <svg width="388" height="1" viewBox="0 0 388 1">
+                        <use xlink:href="img/sprite.svg#contact_line"></use>
+                    </svg>
+                    <a class="contacts__link" href="mailto:info@fingli.ru">info@fingli.ru</a>
+                </div>
+                <div class="contacts--phone contacts__click">
+                    <svg width="388" height="1" viewBox="0 0 388 1">
+                        <use xlink:href="img/sprite.svg#contact_line"></use>
+                    </svg>
+                    <a class="contacts__link" href="tel:+78122932229">+7 (812) 293-22-29</a>
+                </div>
+                <div class="contacts--address contacts__click">
+                    <svg width="388" height="1" viewBox="0 0 388 1">
+                        <use xlink:href="img/sprite.svg#contact_line"></use>
+                    </svg>
+                    <span class="contacts__link">Санкт-Петербург, пр. Энгельса д74, к2</span>
+                </div>
+                <a class="special-link" href="#">ПОСМОТРЕТЬ НА КАРТЕ</a>
             </div>
             <div class="contacts__logo">
                 <svg class="logo__icon" viewBox="0 0 387 107" width="387">
-                    <use xlink:href="img/sprite.svg#logo"></use>
+                    <use xlink:href="img/sprite.svg#logo_contact"></use>
                 </svg>
             </div>
         </div>
@@ -423,28 +515,30 @@
 <!--footer-->
 
 
-<footer class="footer">
-    <div class="footer__item">
-        <p>2021</p>
-    </div>
-    <div class="footer__item">
-        <p>компания web-разработки полного цикла fingli group</p>
-    </div>
-    <div class="footer__item vacancy">
-        <p class="vacancy__head">приглашаем к сотрудничеству</p>
-        <a href="#" class="vacancy__link">Партнёров</a>
-        <a href="#" class="vacancy__link">Соискателей</a>
-    </div>
-    <div class="footer__item contact">
-        <span class="contact__address">Санкт-Петербург, пр. Энгельса д74, к2</span>
-        <a href="tel:+78122932229" class="contact__phone">+7 (812) 293-22-29</a>
-        <a href="mailto:info@fingli.ru" class="contact__email">info@fingli.ru</a>
+<footer class="footer wrap">
+    <div class="footer__box">
+        <div class="footer__item">
+            <p>2021</p>
+        </div>
+        <div class="footer__item">
+            <p>компания web-разработки полного цикла fingli group</p>
+        </div>
+        <div class="footer__item vacancy">
+            <p class="vacancy__head">приглашаем к сотрудничеству</p>
+            <a href="#" class="vacancy__link">Партнёров</a>
+            <a href="#" class="vacancy__link">Соискателей</a>
+        </div>
+        <div class="footer__item contact">
+            <span class="contact__address">Санкт-Петербург, пр. Энгельса д74, к2</span>
+            <a href="tel:+78122932229" class="contact__phone">+7 (812) 293-22-29</a>
+            <a href="mailto:info@fingli.ru" class="contact__email">info@fingli.ru</a>
 
-        <ul class="footer__list contact__list">
-            <li class="contact__social-item"><a href="#" class="contact__social-link">Facebook</a></li>
-            <li class="contact__social-item"><a href="#" class="contact__social-link">Vimeo</a></li>
-            <li class="contact__social-item"><a href="#" class="contact__social-link">Instagram</a></li>
-        </ul>
+            <ul class="footer__list contact__list">
+                <li class="contact__social-item"><a href="#" class="contact__social-link">Facebook</a></li>
+                <li class="contact__social-item"><a href="#" class="contact__social-link">Vimeo</a></li>
+                <li class="contact__social-item"><a href="#" class="contact__social-link">Instagram</a></li>
+            </ul>
+        </div>
     </div>
 </footer>
 </body>
