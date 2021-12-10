@@ -58,6 +58,7 @@
 </header>
 <main class="main">
     <section class="company wrap">
+        <h2 class="visually-hidden">О нашей компании</h2>
         <div class="company__header">
             <p>Fingli Group на рынке IT-индустрии с 2013 года. Наша команда поможет вам реализовать любые цели в сфере
                 разработки и web-продвижения.
@@ -117,7 +118,10 @@
 
         <h2 class="services__title title-section">
             <span class="title-section__up title">ИСПОЛЬЗУЕМ ЛУЧШИЕ рЕШЕНИЯ</span>
-            <span class="title-section__down">СОВРЕМЕННОГО РЫНКА</span>
+            <span class="title-section__down">
+                <span class="title-section__text">СОВРЕМЕННОГО РЫНКА</span>
+                <span class="title-section__line"></span>
+            </span>
         </h2>
 
         <div class="resolution">
@@ -192,11 +196,11 @@
 
         <div class="accordion">
             <div class="accordion__box">
-                <div class="accordion__item">
+                <div class="accordion__item _active">
                     <div class="accordion__title">
                         <h3>АУТСОРС</h3>
                     </div>
-                    <div class="accordion__description _active">
+                    <div class="accordion__description">
                         <p>
                             Выступим в качестве субпорядчика в ваших проектах, взяв на себя реализацию работ по
                             разработке
@@ -367,10 +371,15 @@
     <!--    blog-->
 
     <section class="blog wrap">
-        <div class="blog__title title-section">
-            <span class="title-section__up">РАССКАЗЫВАЕМ О РАБОТЕ</span>
-            <span class="title-section__down">В НАШЕМ АВТОРСКОМ БЛОГЕ</span>
-        </div>
+        <h2 class="blog__title title-section">
+            <span class="title-section__up title">РАССКАЗЫВАЕМ О РАБОТЕ</span>
+            <span class="title-section__down">
+
+            <span class="title-section__text">В НАШЕМ АВТОРСКОМ БЛОГЕ</span>
+                <span class="title-section__line"></span>
+            </span>
+        </h2>
+
         <span class="blog__slogan">Эксклюзивно и из первых рук</span>
         <div class="blog-news">
             <div class="blog-news__item">
@@ -456,7 +465,8 @@
                     </li>
                 </ul>
                 <p class="vacancy__addition-title">Нет твоего направления?</p>
-                <p class="vacancy__addition">Ты всегда можешь написать нам на почту короткий рассказ о себе, своих достижениях и навыках! Мы рады
+                <p class="vacancy__addition">Ты всегда можешь написать нам на почту короткий рассказ о себе, своих
+                    достижениях и навыках! Мы рады
                     любому формату связи
                 </p>
                 <a class="vacancy__mail" href="mailto:info@fingli.ru">info@fingli.ru</a>
@@ -502,9 +512,11 @@
                 <a class="special-link" href="#">ПОСМОТРЕТЬ НА КАРТЕ</a>
             </div>
             <div class="contacts__logo">
-                <svg class="logo__icon" viewBox="0 0 387 107" width="387">
-                    <use xlink:href="img/sprite.svg#logo_contact"></use>
-                </svg>
+                <a href="index.html">
+                    <svg class="logo__icon" viewBox="0 0 387 107" width="387">
+                        <use xlink:href="img/sprite.svg#logo_contact"></use>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
@@ -525,19 +537,19 @@
         </div>
         <div class="footer__item vacancy">
             <p class="vacancy__head">приглашаем к сотрудничеству</p>
-            <a href="#" class="vacancy__link">Партнёров</a>
-            <a href="#" class="vacancy__link">Соискателей</a>
+            <a href="#" class="vacancy__link special-link">Партнёров</a>
+            <a href="#" class="vacancy__link special-link">Соискателей</a>
         </div>
         <div class="footer__item contact">
             <span class="contact__address">Санкт-Петербург, пр. Энгельса д74, к2</span>
             <a href="tel:+78122932229" class="contact__phone">+7 (812) 293-22-29</a>
             <a href="mailto:info@fingli.ru" class="contact__email">info@fingli.ru</a>
 
-            <ul class="footer__list contact__list">
-                <li class="contact__social-item"><a href="#" class="contact__social-link">Facebook</a></li>
-                <li class="contact__social-item"><a href="#" class="contact__social-link">Vimeo</a></li>
-                <li class="contact__social-item"><a href="#" class="contact__social-link">Instagram</a></li>
-            </ul>
+            <!--            <ul class="footer__list contact__list">-->
+            <!--                <li class="contact__social-item"><a href="#" class="contact__social-link">Facebook</a></li>-->
+            <!--                <li class="contact__social-item"><a href="#" class="contact__social-link">Vimeo</a></li>-->
+            <!--                <li class="contact__social-item"><a href="#" class="contact__social-link">Instagram</a></li>-->
+            <!--            </ul>-->
         </div>
     </div>
 </footer>
