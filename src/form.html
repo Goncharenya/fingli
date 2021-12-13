@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>FinGli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="body">
+
+<!--menu-->
+
+<nav class="navigation header__menu">
+    <ul class="menu navigation__item list wrap">
+        <li class="menu__item">
+            <button class="menu__link btn btn-start">START PROJECT</button>
+        </li>
+        <li class="menu__item"><a href="" class="menu__link">ПАРТНЁРАМ</a></li>
+        <li class="menu__item"><a href="" class="menu__link">КАРЬЕРА</a></li>
+
+        <li class="header__logo logo navigation__item">
+            <a class="logo__link" href="index.html">
+                <svg class="logo__icon" width="98" height="29" viewBox="0 0 98 29">
+                    <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
+            </a>
+        </li>
+
+        <li class="menu__item"><a href="" class="menu__link">Компания</a></li>
+        <li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
+        <li class="menu__item"><a href="" class="menu__link">Кейсы</a></li>
+        <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+    </ul>
+</nav>
+
+<!--header-->
+
+<header class="header header-form-career">
+
+    <div class="slogan wrap header-form-career__box">
+        <div class="slogan__item slogan__item-question">
+            <div class="slogan__text">
+                &ndash; Не сосредотачивайся на своих опасениях, Оби-Ван.
+            </div>
+        </div>
+        <div class="slogan__item slogan__item-answer">
+            <div class="slogan__text">
+                <p>Сконцентрируйся на том, что происходит сейчас и здесь.</p>
+            </div>
+        </div>
+        <span class="slogan__author">Клиент — Максим Кеноби</span>
+    </div>
+</header>
+
+
+<div class="contact-details wrap">
+    <h2 class="title title-section">КОНТАКТНЫЕ ДАННЫЕ</h2>
+    <form class="form" method="post" autocomplete="off" name="form">
+        <input type="text" class="form__item" id="name" placeholder="Ф.И.О.">
+        <label for="name"></label>
+        <input type="text" class="form__item" id="sity" placeholder="Город проживания...">
+        <label for="sity"></label>
+        <input type="email" class="form__item" id="email" placeholder="Почта...">
+        <label for="email"></label>
+        <input type="tel" class="form__item" id="phone" placeholder="Номер телефона...">
+        <label for="phone"></label>
+        <input type="text" class="form__item" id="telegramm" placeholder="Никнейм в Telegram...">
+        <label for="telegramm"></label>
+    </form>
+    <p class="form__description">
+        При прохождении анкеты старайтесь не пропускать вопросы. С их помощью мы сможем составить полное представление о
+        вас.</p>
+
+    <p>Спасибо и желаем удачи!</p>
+</div>
+
+<div class="questionnaire">
+    <form action="#" method="get" autocomplete="off">
+        <ul class="questionnaire__list">
+
+            <!--        questionnaire__item 1-->
+
+            <li class="questionnaire__item">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question">
+                        <h3 class="questionnaire__title">Расскажите о себе
+                            <!--                            <svg class="questionnaire__number" viewBox="0 0 191 110">-->
+                            <!--                                <use xlink:href="img/sprite.svg#one"></use>-->
+                            <!--                            </svg>-->
+                            <span class="questionnaire__number">01.</span>
+                        </h3>
+                        <span class="questionnaire__comment">Представьте, что вы находитесь у нас в офисе на собеседовании. Напишите свой рассказ так, чтоб мы его не просто прочитали, но и прочувствовали</span>
+
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="questionnaire__answer">
+                    <textarea class="questionnaire__textarea" name="message"
+                              placeholder="Ваш ответ..."></textarea>
+                    </div>
+                </div>
+            </li>
+            <!--        questionnaire__item 2-->
+
+            <li class="questionnaire__item">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question questionnaire__question--white">
+                        <h3 class="questionnaire__title">Что для вас главное в жизни?
+                            <!--                            <svg class="questionnaire__number" viewBox="0 0 217 110">-->
+                            <!--                                <use xlink:href="img/sprite.svg#two"></use>-->
+                            <!--                            </svg>-->
+                            <span class="questionnaire__number">02.</span>
+                        </h3>
+                        <span class="questionnaire__comment">Только что получили награду за “самый оригинальный” вопрос</span>
+
+                    </div>
+                    <div class="triangle-white triangle"></div>
+                    <div class="questionnaire__answer checkbox">
+                        <div class="checkbox__box">
+                            <input type="checkbox" class="questionnaire__checkbox visually-hidden" id="career">
+                            <label class="questionnaire__label" for="career">Карьера и самореализация</label>
+                            <input type="checkbox" class="questionnaire__checkbox visually-hidden" id="family">
+                            <label class="questionnaire__label" for="family">Семья и дети</label>
+                            <input type="checkbox" class="questionnaire__checkbox visually-hidden" id="pupil">
+                            <label class="questionnaire__label" for="pupil">Окружение, общение и люди</label>
+                            <input type="checkbox" class="questionnaire__checkbox visually-hidden" id="education">
+                            <label class="questionnaire__label" for="education">Развитие и обучение</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!--        questionnaire__item 3-->
+
+            <li class="questionnaire__item">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question">
+                        <h3 class="questionnaire__title">Нам важно работать с людьми, у которых есть чувство юмора.
+                            Напишите
+                            смешной с вашей точки зрения анекдот или историю
+                            <!--                            <svg class="questionnaire__number" viewBox="0 0 218 110">-->
+                            <!--                                <use xlink:href="img/sprite.svg#three"></use>-->
+                            <!--                            </svg>-->
+                            <span class="questionnaire__number">03.</span>
+                        </h3>
+                        <span class="questionnaire__comment">Потом мы и своими поделимся, обещаем</span>
+
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="questionnaire__answer">
+ <textarea class="questionnaire__textarea" name="message"
+           placeholder="Ваш ответ..."></textarea>
+                    </div>
+                </div>
+            </li>
+            <!--        questionnaire__item 4-->
+
+            <li class="questionnaire__item">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question">
+                        <h3 class="questionnaire__title">Чем бы вы занимались, если бы не было необходимости
+                            зарабатывать на
+                            жизнь?
+                            <!--                            <svg class="questionnaire__number" viewBox="0 0 222 110">-->
+                            <!--                                <use xlink:href="img/sprite.svg#four"></use>-->
+                            <!--                            </svg>-->
+                            <span class="questionnaire__number">04.</span>
+                        </h3>
+                        <span class="questionnaire__comment">Нам правда очень интересно</span>
+
+                    </div>
+                    <div class="triangle-white triangle"></div>
+                    <div class="questionnaire__answer">
+                         <textarea class="questionnaire__textarea" name="message" id="message"
+                                   placeholder="Ваш ответ..."></textarea>
+                    </div>
+                </div>
+            </li>
+            <!--        questionnaire__item 5-->
+
+            <li class="questionnaire__item">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question">
+                        <h3 class="questionnaire__title">Расскажите о своих увлечениях. Что вам интересно кроме
+                            работы?
+                            <!--                            <svg class="questionnaire__number" viewBox="0 0 216 110">-->
+                            <!--                                <use xlink:href="img/sprite.svg#five"></use>-->
+                            <!--                            </svg>-->
+                            <span class="questionnaire__number">05.</span>
+                        </h3>
+                        <span class="questionnaire__comment">Музыка? Технологии? Танцы? Технологии? А может космос...?</span>
+
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="questionnaire__answer">
+                         <textarea class="questionnaire__textarea" name="message"
+                                   placeholder="Ваш ответ..."></textarea>
+                    </div>
+                </div>
+            </li>
+            <!--        questionnaire__item 6-->
+
+            <li class="questionnaire__item">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question">
+                        <h3 class="questionnaire__title">Что бы Вы выбрали? При условии,что гарантируется только одна
+                            составляющая, остальные на работе не известны. Выберите только один ответ.
+                            <span class="questionnaire__number">06.</span>
+                        </h3>
+                        <span class="questionnaire__comment">Мы не стали добавлять вариант с кофе и печеньем. Все итак всё понимают</span>
+                        <!--                        <svg class="questionnaire__number" viewBox="0 0 144 110">-->
+                        <!--                            <use xlink:href="img/sprite.svg#six"></use>-->
+                        <!--                        </svg>-->
+                    </div>
+                    <div class="triangle-white triangle"></div>
+                    <div class="questionnaire__answer checkbox">
+                        <div class="checkbox__box">
+                            <input type="radio" class="questionnaire__checkbox visually-hidden" id="option_one"
+                                   name="option">
+                            <label class="questionnaire__label" for="option_one">Работа в интересном коллективе, с
+                                яркими творческими людьми</label>
+
+                            <input type="radio" class="questionnaire__checkbox visually-hidden" id="option_two"
+                                   name="option">
+                            <label class="questionnaire__label" for="option_two">Работа с большими возможностями
+                                карьерного роста</label>
+
+                            <input type="radio" class="questionnaire__checkbox visually-hidden" id="option_three"
+                                   name="option">
+                            <label class="questionnaire__label" for="option_three">Работа с возможностью много
+                                зарабатывать и постоянно увеличивать свой доход</label>
+
+                            <input type="radio" class="questionnaire__checkbox visually-hidden" id="option_four"
+                                   name="option">
+                            <label class="questionnaire__label" for="option_four">Уникальный опыт</label>
+
+                            <input type="radio" class="questionnaire__checkbox visually-hidden" id="option_fife"
+                                   name="option">
+                            <label class="questionnaire__label" for="option_fife">Возможность решать нестандартные,
+                                интересные и сложные задачи на грани возможности</label>
+
+                            <input type="radio" class="questionnaire__checkbox visually-hidden" id="option_six"
+                                   name="option">
+                            <label class="questionnaire__label" for="option_six">Возможность качественно обучаться и
+                                повышать свою цену на рынке</label>
+
+                            <input type="radio" class="questionnaire__checkbox visually-hidden" id="option_seven"
+                                   name="option">
+                            <label class="questionnaire__label" for="option_seven">Возможность влиять на мир, работать в
+                                компании, которая делает что-то значительное с Вашей точки зрения</label>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!--        questionnaire__item 7-->
+
+            <li class="questionnaire__item">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question">
+                        <h3 class="questionnaire__title">Сколько вы планируете зарабатывать в течение ближайшего
+                            года?
+                            <span class="questionnaire__number">07.</span>
+                        </h3>
+                        <span class="questionnaire__comment"></span>
+                        <!--                        <svg class="questionnaire__number" viewBox="0 0 144 110">-->
+                        <!--                            <use xlink:href="img/sprite.svg#seven"></use>-->
+                        <!--                        </svg>-->
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="questionnaire__answer">
+                        <input type="text" class="questionnaire__input-text" id="salary" placeholder="Ваш ответ...">
+                        <label for="salary"></label>
+                    </div>
+                </div>
+            </li>
+            <!--        questionnaire__item 8-->
+
+            <li class="questionnaire__item">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question">
+                        <h3 class="questionnaire__title">Какая для вас приемлемая минимальная оплата?
+                            <span class="questionnaire__number">08.</span>
+                        </h3>
+                        <span class="questionnaire__comment"></span>
+                        <!--                        <svg class="questionnaire__number" viewBox="0 0 144 110">-->
+                        <!--                            <use xlink:href="img/sprite.svg#eight"></use>-->
+                        <!--                        </svg>-->
+                    </div>
+                    <div class="triangle-white triangle"></div>
+                    <div class="questionnaire__answer">
+                        <div class="checkbox__box">
+                            <input type="text" class="questionnaire__input-text" id="min-salary"
+                                   placeholder="Ваш ответ...">
+                            <label for="min-salary"></label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!--        questionnaire__item 9-->
+
+            <li class="questionnaire__item">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question">
+                        <h3 class="questionnaire__title">Что вы делаете, если для решения задачи не достаточно
+                            информации, а
+                            решение задачи критически важно?
+                            <!--                            <svg class="questionnaire__number" viewBox="0 0 217 110">-->
+                            <!--                                <use xlink:href="img/sprite.svg#nine"></use>-->
+                            <!--                            </svg>-->
+                            <span class="questionnaire__number">09.</span>
+                        </h3>
+                        <span class="questionnaire__comment"></span>
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="questionnaire__answer">
+                        <div class="checkbox__box">
+                            <input type="radio" class="questionnaire__checkbox visually-hidden" id="trust" name="trust">
+                            <label class="questionnaire__label" for="trust">Доверять людям, которых ты не знаешь опасно,
+                                человек должен доказать что ему можно доверять</label>
+
+                            <input type="radio" class="questionnaire__checkbox visually-hidden" id="distrust"
+                                   name="trust">
+                            <label class="questionnaire__label" for="distrust">Не доверять людям глупо и неэффективно, я
+                                доверяю пока человек не докажет обратное</label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!--        questionnaire__item 10-->
+
+            <li class="questionnaire__item">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question">
+                        <h3 class="questionnaire__title">Какой у Вас склад ума?
+                            <span class="questionnaire__number">10.</span>
+                        </h3>
+                        <span class="questionnaire__comment">«Кибернетический»</span>
+                        <!--                        <svg class="questionnaire__number" viewBox="0 0 144 110">-->
+                        <!--                            <use xlink:href="img/sprite.svg#ten"></use>-->
+                        <!--                        </svg>-->
+                    </div>
+                    <div class="triangle-white triangle"></div>
+                    <div class="questionnaire__answer">
+
+                            <div class="checkbox__box">
+                                <input type="radio" class="questionnaire__checkbox visually-hidden" id="analytical"
+                                       name="trust">
+                                <label class="questionnaire__label" for="analytical">Аналитический</label>
+
+                                <input type="radio" class="questionnaire__checkbox visually-hidden" checked id="synthetic"
+                                       name="trust">
+                                <label class="questionnaire__label" for="synthetic">Синтетический</label>
+
+                                <input type="radio" class="questionnaire__checkbox visually-hidden" id="humanitarian"
+                                       name="trust">
+                                <label class="questionnaire__label" for="humanitarian">Гуманитарный</label>
+
+                                <input type="radio" class="questionnaire__checkbox visually-hidden" id="mathematical"
+                                       name="trust">
+                                <label class="questionnaire__label" for="mathematical">Математический</label>
+                            </div>
+                        </div>
+
+                </div>
+            </li>
+            <!--        questionnaire__item 11-->
+
+            <li class="questionnaire__item">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question">
+                        <h3 class="questionnaire__title">С какой даты Вы могли бы приступить к работе?
+                            <span class="questionnaire__number">11.</span>
+                        </h3>
+                        <span class="questionnaire__comment"></span>
+                        <!--                        <svg class="questionnaire__number" viewBox="0 0 144 110">-->
+                        <!--                            <use xlink:href="img/sprite.svg#eleven"></use>-->
+                        <!--                        </svg>-->
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="questionnaire__answer">
+                        <div class="checkbox__box">
+                            <input type="text" class="questionnaire__input-text" id="date"
+                                   placeholder="Ваш ответ...">
+                            <label for="date"></label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!--        questionnaire__item 12-->
+
+            <li class="questionnaire__item">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question">
+                        <h3 class="questionnaire__title">Если для Вас важна карьера и профессиональный рост, то куда бы
+                            Вы
+                            стремились бы в развитии?
+                            <span class="questionnaire__number">12.</span>
+                        </h3>
+                        <span class="questionnaire__comment"></span>
+                        <!--                        <svg class="questionnaire__number" viewBox="0 0 144 110">-->
+                        <!--                            <use xlink:href="img/sprite.svg#twelve"></use>-->
+                        <!--                        </svg>-->
+                    </div>
+                    <div class="triangle-white triangle"></div>
+                    <div class="questionnaire__answer">
+                         <textarea class="questionnaire__textarea" name="message"
+                                   placeholder="Ваш ответ..."></textarea>
+                    </div>
+                </div>
+            </li>
+            <!--        questionnaire__item-->
+
+            <li class="questionnaire__item">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question">
+                        <h3 class="questionnaire__title">Опишите стек технологий (языки, фреймворки, CMS,
+                            шаблонизаторы),
+                            которыми вы владеете, знакомы. Смотрели, но не изучали. И те которые хотели изучить.
+                            <span class="questionnaire__number">13.</span>
+                        </h3>
+                        <span class="questionnaire__comment">Оцените свой уровень знаний по 10 бальной шкале (0 не известно, 10 владею свободно)</span>
+                        <!--                        <svg class="questionnaire__number" viewBox="0 0 144 110">-->
+                        <!--                            <use xlink:href="img/sprite.svg#thirteen"></use>-->
+                        <!--                        </svg>-->
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="questionnaire__answer">
+                    </div>
+                </div>
+            </li>
+            <!--        questionnaire__item-->
+
+            <li class="questionnaire__item">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question">
+                        <h3 class="questionnaire__title">Есть массив данных в файле csv в объеме 50Гб, который надо
+                            загрузить в Mysql, и после данные нужно будет отсортировать. Какой способ загрузки и
+                            сортировки
+                            наиболее быстрый?
+                            <span class="questionnaire__number">14.</span>
+                        </h3>
+                        <span class="questionnaire__comment"></span>
+                        <!--                        <svg class="questionnaire__number" viewBox="0 0 144 110">-->
+                        <!--                            <use xlink:href="img/sprite.svg#fourteen"></use>-->
+                        <!--                        </svg>-->
+                    </div>
+                    <div class="triangle-white triangle"></div>
+                    <div class="questionnaire__answer">
+                    </div>
+                </div>
+            </li>
+            <!--        questionnaire__item-->
+
+            <li class="questionnaire__item">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question">
+                        <h3 class="questionnaire__title">Какие предпочтения по форме работы? Можно выбрать несколько
+                            вариантов.
+                            <span class="questionnaire__number">15.</span>
+                        </h3>
+                        <span class="questionnaire__comment"></span>
+                        <!--                        <svg class="questionnaire__number" viewBox="0 0 144 110">-->
+                        <!--                            <use xlink:href="img/sprite.svg#fifteen"></use>-->
+                        <!--                        </svg>-->
+                    </div>
+                    <div class="triangle"></div>
+                    <div class="questionnaire__answer">
+                    </div>
+                </div>
+            </li>
+
+            <!--        questionnaire__item-->
+
+            <li class="questionnaire__item questionnaire__item--last-child">
+                <div class="questionnaire__box wrap">
+                    <div class="questionnaire__question">
+                        <h3 class="questionnaire__title">Какие предпочтения по форме работы? Можно выбрать несколько
+                            вариантов.</h3>
+                        <span class="questionnaire__comment"></span>
+                    </div>
+                    <div class="questionnaire__answer">
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </form>
+
+</div>
+
+
+<!--footer-->
+
+<footer class="footer wrap">
+    <div class="footer__box">
+        <div class="footer__item">
+            <p>2021</p>
+        </div>
+        <div class="footer__item">
+            <p>компания web-разработки полного цикла fingli group</p>
+        </div>
+        <div class="footer__item vacancy">
+            <p class="vacancy__head">приглашаем к сотрудничеству</p>
+            <a href="#" class="vacancy__link special-link">Партнёров</a>
+            <a href="#" class="vacancy__link special-link">Соискателей</a>
+        </div>
+        <div class="footer__item contact">
+            <span class="contact__address">Санкт-Петербург, пр. Энгельса д74, к2</span>
+            <a href="tel:+78122932229" class="contact__phone">+7 (812) 293-22-29</a>
+            <a href="mailto:info@fingli.ru" class="contact__email">info@fingli.ru</a>
+
+            <!--            <ul class="footer__list contact__list">-->
+            <!--                <li class="contact__social-item"><a href="#" class="contact__social-link">Facebook</a></li>-->
+            <!--                <li class="contact__social-item"><a href="#" class="contact__social-link">Vimeo</a></li>-->
+            <!--                <li class="contact__social-item"><a href="#" class="contact__social-link">Instagram</a></li>-->
+            <!--            </ul>-->
+        </div>
+    </div>
+</footer>
+</body>
+</html>

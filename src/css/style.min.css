@@ -1,7 +1,332 @@
+input {
+  border: none;
+  outline: none;
+}
+
+.header-form-career {
+  background: url("../img/form_bg_slogan.svg") no-repeat 0 38%;
+}
+.header-form-career .slogan__item-question,
+.header-form-career .slogan__item-answer {
+  background: none;
+}
+.header-form-career .slogan__item p {
+  text-align: left;
+  font-size: 96px;
+  line-height: 116px;
+  text-indent: 80px;
+}
+
+.contact-details {
+  background: url("../img/logo_owl.svg") no-repeat right top;
+  padding-bottom: 110px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form .form__item {
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(20, 19, 18, 0.4);
+  padding: 10px 20px;
+  border: 2px solid rgba(20, 19, 18, 0.2);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  width: 26%;
+}
+.form .form__item:hover {
+  border: 2px solid rgba(20, 19, 18, 0.6);
+  color: rgba(20, 19, 18, 0.8);
+}
+.form .form__item:active {
+  border: 2px solid rgba(20, 19, 18, 0.6);
+}
+.form .form__item:focus {
+  border: 2px solid rgba(20, 19, 18, 0.6);
+}
+
+.form__description {
+  width: 26%;
+  margin-top: 109px;
+  margin-bottom: 50px;
+}
+
+.questionnaire {
+  background: #141312;
+}
+.questionnaire .questionnaire__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.questionnaire__item {
+  position: relative;
+  min-height: 570px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.questionnaire__item:before {
+  content: "";
+  position: absolute;
+  width: 43%;
+  height: 700px;
+  background: #1f1d1c;
+  left: -159px;
+  top: -60px;
+}
+.questionnaire__item .questionnaire__box {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+}
+.questionnaire__item .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 285px 0 285px 252px;
+  border-color: transparent transparent transparent #1f1d1c;
+  margin-left: -1px;
+}
+.questionnaire__item .triangle-white {
+  border-color: transparent transparent transparent #ffffff;
+}
+.questionnaire__item:nth-child(even):before {
+  background: #ffffff;
+}
+
+.questionnaire__item--last-child {
+  align-items: flex-start;
+}
+.questionnaire__item--last-child:before {
+  content: "";
+  position: absolute;
+  width: 1170px;
+  top: -21px;
+  left: -374px;
+  height: 1268px;
+  transform: rotate(45deg);
+}
+
+.questionnaire__answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.questionnaire__question {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #1f1d1c;
+}
+.questionnaire__question .questionnaire__title {
+  font-size: 1.5rem;
+  line-height: 41px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #ffffff;
+  position: relative;
+  width: 388px;
+}
+.questionnaire__question .questionnaire__title:after {
+  position: absolute;
+  content: "";
+  width: 150px;
+  background: rgba(255, 255, 255, 0.3);
+  height: 1px;
+  bottom: -12px;
+  left: 0;
+}
+.questionnaire__question .questionnaire__comment {
+  font-size: 12px;
+  line-height: 170%;
+  color: rgba(255, 255, 255, 0.6);
+  width: 388px;
+}
+.questionnaire__question .questionnaire__number {
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  left: -14%;
+  right: 59%;
+  top: -43%;
+}
+
+.questionnaire__box .questionnaire__number {
+  position: absolute;
+  left: -50px;
+  top: -118px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 174px;
+  color: rgba(255, 255, 255, 0.1);
+}
+.questionnaire__box .questionnaire__number:nth-child(even) {
+  color: red;
+}
+
+.questionnaire__item:nth-child(even) .questionnaire__question {
+  background: #ffffff;
+}
+.questionnaire__item:nth-child(even) .questionnaire__question .questionnaire__number {
+  color: rgba(20, 19, 18, 0.1);
+}
+.questionnaire__item:nth-child(even) .questionnaire__title {
+  color: #141312;
+}
+.questionnaire__item:nth-child(even) .questionnaire__title:after {
+  position: absolute;
+  content: "";
+  width: 150px;
+  background: rgba(20, 19, 18, 0.3);
+  height: 1px;
+  bottom: -12px;
+  left: 0;
+}
+.questionnaire__item:nth-child(even) .questionnaire__comment {
+  color: rgba(20, 19, 18, 0.6);
+}
+
+.questionnaire__answer .questionnaire__textarea {
+  width: 660px;
+  height: 200px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background: none;
+  padding: 1rem;
+  resize: none;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 41px;
+  outline: none;
+}
+.questionnaire__answer .questionnaire__textarea::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.questionnaire__answer .questionnaire__textarea:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+.questionnaire__answer .questionnaire__textarea:hover::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.questionnaire__answer .questionnaire__textarea:active {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+.questionnaire__answer .questionnaire__textarea:focus {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.checkbox__box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.questionnaire__label {
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  padding: 10px 40px 10px 0;
+  margin-bottom: 1rem;
+  width: 100%;
+  position: relative;
+}
+.questionnaire__label:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.questionnaire__label:hover {
+  padding-left: 20px;
+  padding-right: 40px;
+  cursor: pointer;
+}
+.questionnaire__label:hover:after {
+  height: 10px;
+}
+.questionnaire__label:focus {
+  padding-left: 20px;
+  padding-right: 40px;
+  background: #ffffff;
+  color: #141312;
+}
+.questionnaire__label:active {
+  padding-left: 20px;
+  padding-right: 40px;
+  background: #ffffff;
+  color: #141312;
+}
+
+.questionnaire__checkbox + .questionnaire__label {
+  position: relative;
+}
+
+.questionnaire__checkbox + .questionnaire__label:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 17px;
+  width: 10px;
+  height: 10px;
+  transition: 0.2s;
+}
+
+.questionnaire__checkbox:checked + .questionnaire__label:before {
+  background: #141312;
+  top: 40%;
+}
+
+.questionnaire__checkbox:checked + .questionnaire__label {
+  background: white;
+  color: #141312;
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+.questionnaire__checkbox:focus + .questionnaire__label {
+  padding-left: 20px;
+}
+
+.questionnaire__checkbox:active + .questionnaire__label {
+  padding-left: 20px;
+}
+
+.questionnaire__checkbox:hover + .questionnaire__label:before {
+  bottom: 0;
+}
+
+.questionnaire__input-text {
+  background: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  width: 100%;
+  color: #ffffff;
+}
+.questionnaire__input-text::placeholder {
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 @font-face {
   font-family: inter, sans-serif;
   src: url("../fonts/inter/InterThin.woff");
   font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Inter, sans-serif;
+  src: url("../fonts/inter/InterExtraBold.woff");
+  font-weight: bold;
   font-style: normal;
 }
 @font-face {
@@ -86,6 +411,9 @@ button {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .wrap {
@@ -138,10 +466,10 @@ button {
 }
 
 .slogan__item {
-  margin-top: 5.4rem;
+  margin-top: 5.7rem;
 }
 .slogan__item:nth-child(2) {
-  margin-top: 6.2rem;
+  margin-top: 6.5rem;
 }
 .slogan__item .slogan__text {
   font-size: 6rem;
@@ -166,7 +494,7 @@ button {
   position: absolute;
   width: 71%;
   height: 1px;
-  background: #141312;
+  background: rgba(20, 19, 18, 0.4);
   top: 14px;
 }
 
@@ -341,6 +669,7 @@ button {
   flex-direction: column;
   justify-content: end;
   align-items: center;
+  padding-bottom: 3rem;
 }
 .resolution__item .resolution__title {
   font-size: 1.5rem;
@@ -380,10 +709,11 @@ button {
   min-width: 700px;
   padding-right: 2rem;
   box-sizing: border-box;
+  padding-left: 1rem;
 }
 
 .accordion__box {
-  margin-bottom: 5.5rem;
+  margin-bottom: 9rem;
 }
 
 .accordion__title {
@@ -396,7 +726,7 @@ button {
   font-size: 1.5rem;
   line-height: 29px;
   cursor: pointer;
-  background: url(../img/plus.svg) no-repeat 96%;
+  background: url(../img/plus.svg) no-repeat 99%;
 }
 .accordion__title h3 {
   font-size: 1.5rem;
@@ -450,7 +780,7 @@ button {
   display: flex;
 }
 .tags .tags__item {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-right: 1rem;
   color: rgba(20, 19, 18, 0.6);
   padding: 5px 10px;
@@ -460,10 +790,10 @@ button {
 }
 
 .portfolio__title {
-  font-size: 0.75rem;
+  font-size: 1.5rem;
   line-height: 41px;
   font-weight: 100;
-  margin: 1rem 0;
+  margin: 1rem 0 3rem;
 }
 .portfolio__title span {
   color: #e45b52;
@@ -653,6 +983,9 @@ button {
 .vacancy__box .vacancy__box-item {
   width: 50%;
 }
+.vacancy__box .vacancy__box-item:first-child {
+  margin-right: 2rem;
+}
 .vacancy__box .vacancy__box-item h3 {
   text-transform: uppercase;
   background: #141312;
@@ -665,14 +998,14 @@ button {
 .vacancy__box .vacancy__box-item .vacancy__description {
   font-size: 1rem;
   line-height: 27px;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 .vacancy__box .vacancy__box-item a {
   font-weight: 700;
 }
 
 .vacancy__tags {
-  margin-right: 80px;
+  margin-right: 116px;
 }
 .vacancy__tags button {
   margin: 5px 10px;

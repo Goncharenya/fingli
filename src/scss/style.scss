@@ -5,6 +5,10 @@ $opacity_40_DarkGrey: rgba(20, 19, 18, 0.4);
 $opacity_60_DarkGrey: rgba(20, 19, 18, 0.6);
 $basicWhite: #ffffff;
 $opacity_60_White: rgba(255, 255, 255, 0.6);
+$input_placeholder: rgba(20, 19, 18, 0.4);
+$form_bg: #1f1d1c;
+
+@import "form";
 
 @font-face {
   font-family: inter, sans-serif;
@@ -12,6 +16,13 @@ $opacity_60_White: rgba(255, 255, 255, 0.6);
   font-weight: 200;
   font-style: normal;
 }
+@font-face {
+  font-family: Inter, sans-serif;
+  src: url('../fonts/inter/InterExtraBold.woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
 
 //12px-0.75rem
 //14px-0.875rem
@@ -104,6 +115,9 @@ button {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .wrap {
@@ -166,10 +180,10 @@ button {
 }
 
 .slogan__item {
-  margin-top: 5.4rem;
+  margin-top: 5.7rem;
 
   &:nth-child(2) {
-    margin-top: 6.2rem;
+    margin-top: 6.5rem;
   }
 
   .slogan__text {
@@ -197,7 +211,7 @@ button {
     position: absolute;
     width: 71%;
     height: 1px;
-    background: $basicDarkGrey;
+    background: rgba(20, 19, 18, 0.4);
     top: 14px;
   }
 }
@@ -395,12 +409,16 @@ button {
     flex-direction: column;
     justify-content: end;
     align-items: center;
+    padding-bottom: 3rem;
   }
 
   .resolution__title {
     font-size: 1.5rem;
     line-height: 29px;
     font-weight: 100;
+    &:after {
+
+    }
   }
 
   .resolution__desk {
@@ -442,6 +460,7 @@ button {
   min-width: 700px;
   padding-right: 2rem;
   box-sizing: border-box;
+  padding-left: 1rem;
 }
 
 
@@ -449,7 +468,7 @@ button {
 
 
 .accordion__box {
-  margin-bottom: 5.5rem;
+  margin-bottom: 9rem;
 }
 
 .accordion__title {
@@ -462,7 +481,7 @@ button {
   font-size: 1.5rem;
   line-height: 29px;
   cursor: pointer;
-  background: url(../img/plus.svg) no-repeat 96%;
+  background: url(../img/plus.svg) no-repeat 99%;
 
   h3 {
     font-size: 1.5rem;
@@ -527,7 +546,7 @@ button {
   display: flex;
 
   .tags__item {
-    margin-top: 1rem;
+    margin-top: .5rem;
     margin-right: 1rem;
     color: $opacity_60_DarkGrey;
     padding: 5px 10px;
@@ -538,10 +557,10 @@ button {
 }
 
 .portfolio__title {
-  font-size: 0.75rem;
+  font-size: 1.5rem;
   line-height: 41px;
   font-weight: 100;
-  margin: 1rem 0;
+  margin: 1rem 0 3rem;
 
   span {
     color: $basicRed;
@@ -759,6 +778,9 @@ button {
 
   .vacancy__box-item {
     width: 50%;
+    &:first-child {
+      margin-right: 2rem;
+    }
 
     h3 {
       text-transform: uppercase;
@@ -773,7 +795,7 @@ button {
     .vacancy__description {
       font-size: 1rem;
       line-height: 27px;
-      padding-left: 2rem;
+      padding-left: 1rem;
     }
 
     a {
@@ -783,7 +805,7 @@ button {
 }
 
 .vacancy__tags {
-  margin-right: 80px;
+  margin-right: 116px;
 
   button {
     margin: 5px 10px;
