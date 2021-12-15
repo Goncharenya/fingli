@@ -8,25 +8,28 @@
 </head>
 <body class="body">
 <nav class="navigation header__menu">
+    <div class="header__mobile _active">
+        <span class="header__mobile-line"></span>
+        <span class="header__mobile-line"></span>
+        <span class="header__mobile-line"></span>
+    </div>
     <ul class="menu navigation__item list wrap">
         <li class="menu__item">
             <button class="menu__link btn btn-start">START PROJECT</button>
         </li>
-        <li class="menu__item"><a href="" class="menu__link">ПАРТНЁРАМ</a></li>
-        <li class="menu__item"><a href="form.html" class="menu__link">КАРЬЕРА</a></li>
-
-        <li class="header__logo logo navigation__item">
+        <li class="menu__item menu__item--mobile"><a href="" class="menu__link">ПАРТНЁРАМ</a></li>
+        <li class="menu__item menu__item--mobile"><a href="form.html" class="menu__link">КАРЬЕРА</a></li>
+        <li class="menu__item header__logo logo navigation__item">
             <a class="logo__link" href="index.html">
                 <svg class="logo__icon" width="98" height="29" viewBox="0 0 98 29">
                     <use xlink:href="img/sprite.svg#logo"></use>
                 </svg>
             </a>
         </li>
-
-        <li class="menu__item"><a href="" class="menu__link">Компания</a></li>
-        <li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
-        <li class="menu__item"><a href="" class="menu__link">Кейсы</a></li>
-        <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+        <li class="menu__item menu__item--mobile"><a href="" class="menu__link">Компания</a></li>
+        <li class="menu__item menu__item--mobile"><a href="" class="menu__link">Услуги</a></li>
+        <li class="menu__item menu__item--mobile"><a href="" class="menu__link">Кейсы</a></li>
+        <li class="menu__item menu__item--mobile"><a href="" class="menu__link">Контакты</a></li>
     </ul>
 </nav>
 <header class="header">
@@ -68,7 +71,7 @@
             </div>
         </div>
         <div class="company__description">
-            <div class="company__description-test">
+            <div class="company__description-text">
                 <p>Нас привлекают сложные и амбициозные проекты, требующие комплексных решений. Для нас не существует
                     трудностей - любую задачу мы разложим на простые, понятные и решаемые этапы.
                 </p>
@@ -80,17 +83,20 @@
                 </p>
             </div>
             <div class="company__img">
-                <img src="img/office.jpg" alt="мечтательное фото офиса" srcset="img/office@2x.jpg 2x">
-                <a href="#" class="company__img-desc">компания</a>
+<!--                <img src="img/office.jpg" alt="мечтательное фото офиса" srcset="img/office@2x.jpg 2x" width="660" height="350">-->
             </div>
+
+        </div>
+        <div class="company__link-box">
+        <a href="#" class="company__link">компания</a>
         </div>
     </section>
 
     <section class="services wrap">
         <div class="services__box">
             <div class="services__item services__item-img">
-                <img class="services__img" src="img/services.jpg" srcset="img/services@2x.jpg 2x"
-                     alt="да-да, именно тут творят чудеса IT">
+<!--                <img class="services__img" src="img/services.jpg" srcset="img/services@2x.jpg 2x"-->
+<!--                     alt="да-да, именно тут творят чудеса IT">-->
                 <a href="#" class="services__img-desc">услуги</a>
             </div>
             <div class="services__item">
@@ -196,7 +202,7 @@
 
         <div class="accordion">
             <div class="accordion__box">
-                <div class="accordion__item _active">
+                <div class="accordion__item">
                     <div class="accordion__title">
                         <h3>АУТСОРС</h3>
                     </div>
@@ -383,7 +389,7 @@
         <span class="blog__slogan">Эксклюзивно и из первых рук</span>
         <div class="blog-news">
             <div class="blog-news__item">
-                <img src="img/news.jpg" alt="news" srcset="img/news@2x.jpg 2x" width="388" height="303">
+                <img class="blog-news__item-img" src="img/news.jpg" alt="news" srcset="img/news@2x.jpg 2x" width="388" height="303">
             </div>
             <div class="blog-news__item blog__list">
                 <ul class="blog-news__list list">
@@ -530,10 +536,8 @@
 <footer class="footer wrap">
     <div class="footer__box">
         <div class="footer__item">
-            <p>2021</p>
-        </div>
-        <div class="footer__item">
-            <p>компания web-разработки полного цикла fingli group</p>
+            <p class="footer__year">2021</p>
+            <p class="footer__content">компания web-разработки полного цикла fingli group</p>
         </div>
         <div class="footer__item vacancy">
             <p class="vacancy__head">приглашаем к сотрудничеству</p>

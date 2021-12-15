@@ -407,7 +407,7 @@
                     </div>
                 </div>
             </li>
-            <!--        questionnaire__item-->
+            <!--        questionnaire__item 13-->
 
             <li class="questionnaire__item">
                 <div class="questionnaire__box wrap">
@@ -424,10 +424,12 @@
                     </div>
                     <div class="triangle"></div>
                     <div class="questionnaire__answer">
+                        <textarea class="questionnaire__textarea" name="message"
+                                  placeholder="Ваш ответ..."></textarea>
                     </div>
                 </div>
             </li>
-            <!--        questionnaire__item-->
+            <!--        questionnaire__item 14-->
 
             <li class="questionnaire__item">
                 <div class="questionnaire__box wrap">
@@ -445,10 +447,15 @@
                     </div>
                     <div class="triangle-white triangle"></div>
                     <div class="questionnaire__answer">
+                        <div class="checkbox__box">
+                            <input type="text" class="questionnaire__input-text" id="task"
+                                   placeholder="Ваш ответ...">
+                            <label for="task"></label>
+                        </div>
                     </div>
                 </div>
             </li>
-            <!--        questionnaire__item-->
+            <!--        questionnaire__item 15-->
 
             <li class="questionnaire__item">
                 <div class="questionnaire__box wrap">
@@ -464,20 +471,37 @@
                     </div>
                     <div class="triangle"></div>
                     <div class="questionnaire__answer">
+                        <div class="checkbox__box">
+                            <input type="checkbox" class="questionnaire__checkbox visually-hidden" id="work-office">
+                            <label class="questionnaire__label" for="work-office">Работа в офисе</label>
+                            <input type="checkbox" class="questionnaire__checkbox visually-hidden" id="home-office">
+                            <label class="questionnaire__label" for="home-office">Удалённая работа</label>
+                            <input type="checkbox" class="questionnaire__checkbox visually-hidden" id="fix-salary">
+                            <label class="questionnaire__label" for="fix-salary">Фиксированная оплата труда (оклад)</label>
+                            <input type="checkbox" class="questionnaire__checkbox visually-hidden" id="project-salary">
+                            <label class="questionnaire__label" for="project-salary">Ежемесячная оплата по-проектно</label>
+                            <input type="checkbox" class="questionnaire__checkbox visually-hidden" id="nothing">
+                            <label class="questionnaire__label" for="nothing">Не имеет значения</label>
+
+                        </div>
+
                     </div>
                 </div>
             </li>
 
-            <!--        questionnaire__item-->
+            <!--        questionnaire__item 16-->
 
             <li class="questionnaire__item questionnaire__item--last-child">
                 <div class="questionnaire__box wrap">
                     <div class="questionnaire__question">
-                        <h3 class="questionnaire__title">Какие предпочтения по форме работы? Можно выбрать несколько
-                            вариантов.</h3>
+<!--                        <svg class="questionnaire__gratitude" viewBox="0 0 682 261"  width="682" height="261">-->
+<!--                            <use xlink:href="img/sprite.svg#gratitude"></use>-->
+<!--                        </svg>-->
+
                         <span class="questionnaire__comment"></span>
                     </div>
                     <div class="questionnaire__answer">
+                        <button class="questionnaire__sand">ОТПРАВИТЬ</button>
                     </div>
                 </div>
             </li>
