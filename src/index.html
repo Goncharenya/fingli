@@ -8,16 +8,43 @@
 </head>
 <body class="body">
 <nav class="navigation header__menu">
-    <div class="header__mobile _active">
-        <span class="header__mobile-line"></span>
-        <span class="header__mobile-line"></span>
-        <span class="header__mobile-line"></span>
+
+        <button type="button" class="line-box menu__close">
+            <span class="header__mobile-line"></span>
+            <span class="header__mobile-line"></span>
+            <span class="header__mobile-line"></span>
+        </button>
+
+    <div class="header__mobile-burger">
+    <ul class="header__mobile-list list">
+        <li class="header__mobile-item"><a href="index.html" class="header__mobile-link">Главная</a></li>
+        <li class="header__mobile-item"><a href="partners.html" class="header__mobile-link">Партнёрам</a></li>
+        <li class="header__mobile-item"><a href="form.html" class="header__mobile-link">Карьера</a></li>
+        <li class="header__mobile-item"><a href="company.html" class="header__mobile-link">Компания</a></li>
+        <li class="header__mobile-item"><a href="services.html" class="header__mobile-link">Услуги</a></li>
+        <li class="header__mobile-item"><a href="portfolio.html" class="header__mobile-link">Кейсы</a></li>
+        <li class="header__mobile-item"><a href="contacts.html" class="header__mobile-link">Контакты</a></li>
+    </ul>
+    <div class="header__mobile-footer">
+        <svg class="logo__mobile" width="252" height="70" viewBox="0 0 252 70">
+            <use xlink:href="img/sprite.svg#logo_mobile"></use>
+        </svg>
+        <div class="header__mobile-contact">
+            <p>
+                Санкт-Петербург, пр. Энгельса д74, к2
+            </p>
+            <a href="tel:+78122932229">
+                +7 (812) 293-22-29
+            </a>
+            <a href="mailto:info@fingli.ru">info@fingli.ru</a>
+        </div>
+    </div>
     </div>
     <ul class="menu navigation__item list wrap">
         <li class="menu__item">
             <button class="menu__link btn btn-start">START PROJECT</button>
         </li>
-        <li class="menu__item menu__item--mobile"><a href="" class="menu__link">ПАРТНЁРАМ</a></li>
+        <li class="menu__item menu__item--mobile"><a href="partners.html" class="menu__link">ПАРТНЁРАМ</a></li>
         <li class="menu__item menu__item--mobile"><a href="form.html" class="menu__link">КАРЬЕРА</a></li>
         <li class="menu__item header__logo logo navigation__item">
             <a class="logo__link" href="index.html">
@@ -26,10 +53,10 @@
                 </svg>
             </a>
         </li>
-        <li class="menu__item menu__item--mobile"><a href="" class="menu__link">Компания</a></li>
-        <li class="menu__item menu__item--mobile"><a href="" class="menu__link">Услуги</a></li>
-        <li class="menu__item menu__item--mobile"><a href="" class="menu__link">Кейсы</a></li>
-        <li class="menu__item menu__item--mobile"><a href="" class="menu__link">Контакты</a></li>
+        <li class="menu__item menu__item--mobile"><a href="company.html" class="menu__link">Компания</a></li>
+        <li class="menu__item menu__item--mobile"><a href="services.html" class="menu__link">Услуги</a></li>
+        <li class="menu__item menu__item--mobile"><a href="portfolio.html" class="menu__link">Кейсы</a></li>
+        <li class="menu__item menu__item--mobile"><a href="contacts.html" class="menu__link">Контакты</a></li>
     </ul>
 </nav>
 <header class="header">
@@ -39,22 +66,12 @@
             <div class="slogan__text">
                 &ndash; Хотите сказать, Fingli сильнее остальных?
             </div>
-            <!--            <div class="slogan__img">-->
-            <!--                <svg class="logo__icon" width="212" height="212" viewBox="0 0 212 212">-->
-            <!--                    <use xlink:href="img/sprite.svg#owl"></use>-->
-            <!--                </svg>-->
-            <!--            </div>-->
         </div>
         <div class="slogan__item slogan__item-answer">
             <div class="slogan__text">
                 <p> Нет. Легче, быстрее, &ndash;</p>
                 <p class="special">соблазнительнее.</p>
             </div>
-            <!--            <div class="slogan__img">-->
-            <!--                <svg class="logo__icon robot-svg" width="195" height="195" viewBox="0 0 195 195">-->
-            <!--                    <use xlink:href="img/sprite.svg#robot"></use>-->
-            <!--                </svg>-->
-            <!--            </div>-->
         </div>
         <span class="slogan__author">Клиент — Максим Кеноби</span>
     </div>
@@ -82,21 +99,21 @@
                     выдать наиболее эффективный для вас результат.
                 </p>
             </div>
-            <div class="company__img">
-<!--                <img src="img/office.jpg" alt="мечтательное фото офиса" srcset="img/office@2x.jpg 2x" width="660" height="350">-->
-            </div>
+            <!--            <div class="company__img">-->
+            <!--                <img src="img/office.jpg" alt="мечтательное фото офиса" srcset="img/office@2x.jpg 2x" width="660" height="350">-->
+            <!--            </div>-->
 
         </div>
         <div class="company__link-box">
-        <a href="#" class="company__link">компания</a>
+            <a href="#" class="company__link">компания</a>
         </div>
     </section>
 
     <section class="services wrap">
         <div class="services__box">
             <div class="services__item services__item-img">
-<!--                <img class="services__img" src="img/services.jpg" srcset="img/services@2x.jpg 2x"-->
-<!--                     alt="да-да, именно тут творят чудеса IT">-->
+                <!--                <img class="services__img" src="img/services.jpg" srcset="img/services@2x.jpg 2x"-->
+                <!--                     alt="да-да, именно тут творят чудеса IT">-->
                 <a href="#" class="services__img-desc">услуги</a>
             </div>
             <div class="services__item">
@@ -389,7 +406,8 @@
         <span class="blog__slogan">Эксклюзивно и из первых рук</span>
         <div class="blog-news">
             <div class="blog-news__item">
-                <img class="blog-news__item-img" src="img/news.jpg" alt="news" srcset="img/news@2x.jpg 2x" width="388" height="303">
+                <img class="blog-news__item-img" src="img/news.jpg" alt="news" srcset="img/news@2x.jpg 2x" width="388"
+                     height="303">
             </div>
             <div class="blog-news__item blog__list">
                 <ul class="blog-news__list list">
@@ -459,7 +477,6 @@
                         <div class="vacancy__tags">
                             <button>Проектно</button>
                             <button>Full-time</button>
-
                         </div>
                     </li>
                     <li class="vacancy__item">
@@ -478,7 +495,7 @@
                 <a class="vacancy__mail" href="mailto:info@fingli.ru">info@fingli.ru</a>
             </div>
             <div class="vacancy__box-item">
-                <h3>ПРОКАЧАЕМ DIGITAL СФЕРУ ВМЕСТЕ</h3>
+                <span class="vacancy__slogan">ПРОКАЧАЕМ DIGITAL СФЕРУ ВМЕСТЕ</span>
                 <p class="vacancy__description">Мы ищем талантливых и целеустремленных программистов, которые способны
                     перевернуть все имеющиеся
                     представления о вебе.
@@ -548,14 +565,11 @@
             <span class="contact__address">Санкт-Петербург, пр. Энгельса д74, к2</span>
             <a href="tel:+78122932229" class="contact__phone">+7 (812) 293-22-29</a>
             <a href="mailto:info@fingli.ru" class="contact__email">info@fingli.ru</a>
-
-            <!--            <ul class="footer__list contact__list">-->
-            <!--                <li class="contact__social-item"><a href="#" class="contact__social-link">Facebook</a></li>-->
-            <!--                <li class="contact__social-item"><a href="#" class="contact__social-link">Vimeo</a></li>-->
-            <!--                <li class="contact__social-item"><a href="#" class="contact__social-link">Instagram</a></li>-->
-            <!--            </ul>-->
         </div>
     </div>
 </footer>
+
+<script src="js/main_menu.js"></script>
+<script src="js/accordion.js"></script>
 </body>
 </html>

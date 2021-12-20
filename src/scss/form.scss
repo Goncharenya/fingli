@@ -12,12 +12,17 @@ input {
     background: none;
   }
 
-  .slogan__item p {
-    text-align: left;
-    font-size: 96px;
-    line-height: 116px;
-    text-indent: 80px;
-  }
+  //.slogan__item p {
+  //  text-align: left;
+  //  font-size: 96px;
+  //  line-height: 116px;
+  //  text-indent: 80px;
+  //}
+}
+
+.header .slogan__item .header-form-career__slogan {
+  margin-right: 0;
+  margin-left: 4rem;
 }
 
 //contact-details
@@ -95,11 +100,15 @@ input {
   .questionnaire__box {
     display: grid;
     grid-template-columns: 2fr 1fr 3fr;
+
+    @media (max-width: 1220px) {
+      grid-template-columns: 2fr 1fr 3fr;
+    }
   }
 
   .triangle {
     width: 0;
-    height: 0;
+    height: auto;
     border-style: solid;
     border-width: 285px 0 285px 252px;
     border-color: transparent transparent transparent $form_bg;
@@ -136,6 +145,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 1rem;
 }
 
 .questionnaire__question {
@@ -144,6 +154,10 @@ input {
   flex-direction: column;
   justify-content: center;
   background: $form_bg;
+
+  @media (max-width: 1220px) {
+    min-width: 280px;
+  }
 
 
   .questionnaire__title {
@@ -233,8 +247,8 @@ input {
 
 .questionnaire__answer {
   .questionnaire__textarea {
-    width: 660px;
-    height: 200px;
+    width: 100%;
+    min-height: 200px;
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     background: none;
@@ -366,10 +380,19 @@ input {
   border-bottom: 1px solid $opacity_60_White;
   width: 100%;
   color: $basicWhite;
+
   &::placeholder {
     font-size: 18px;
     line-height: 22px;
     color: $opacity_60_White;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $basicWhite;
+  }
+
+  &:hover::placeholder {
+    color: $basicWhite;
   }
 }
 

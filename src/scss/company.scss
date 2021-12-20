@@ -1,0 +1,101 @@
+
+
+.header-company__slogan {
+  margin-top: 5rem;
+}
+
+.decor {
+  display: flex;
+  justify-content: center;
+  .decor__item {
+    width: 20px;
+    background: #000000;
+    height: 69px;
+    margin-right: 20px;
+
+    &:nth-child(2) {
+      width: 15px;
+      margin-right: 15px;
+    }
+
+    &:nth-child(3) {
+      width: 10px;
+      margin-right: 10px;
+    }
+
+    &:nth-child(4) {
+      width: 5px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.slogan-company__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ._special {
+    border: 1px solid $basicDarkGrey;
+    padding: 10px 15px;
+  }
+
+  &:nth-child(2) {
+    border-bottom: 2px solid #141312;
+    border-top: 2px solid #141312;
+    margin: 20px 0;
+
+    .slogan-company__arr {
+      background: url("../img/arr_long.svg") no-repeat 100%;
+      display: block;
+      width: 50%;
+      height: 20px;
+    }
+  }
+
+  &:nth-child(3) {
+
+    ._special {
+      background: $basicDarkGrey;
+      color: $basicWhite;
+      padding-left: 20%;
+    }
+  }
+}
+
+.decor-cube {
+  display: flex;
+  justify-content: center;
+
+  .decor-cube__item {
+    width: 20px;
+    height: 20px;
+    background: $basicDarkGrey;
+    margin-right: 60px;
+  }
+}
+
+.interview-title__box {
+  margin-top: 20px;
+  width: 100%;
+  background: $basicDarkGrey;
+  padding: 40px 0;
+
+  .interview-title__item {
+    color: $basicWhite;
+    font-size: 2.25rem;
+    line-height: 61px;
+    text-transform: uppercase;
+
+    &:first-child {
+      padding: 0 60px 20px;
+
+    }
+
+    &:last-child {
+      border-top: 1px dashed $basicWhite;
+      font-weight: 400;
+      padding: 20px 60px 0;
+    }
+  }
+}
