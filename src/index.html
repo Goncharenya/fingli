@@ -9,36 +9,36 @@
 <body class="body">
 <nav class="navigation header__menu">
 
-        <button type="button" class="line-box menu__close">
-            <span class="header__mobile-line"></span>
-            <span class="header__mobile-line"></span>
-            <span class="header__mobile-line"></span>
-        </button>
+    <button type="button" class="line-box menu__close">
+        <span class="header__mobile-line"></span>
+        <span class="header__mobile-line"></span>
+        <span class="header__mobile-line"></span>
+    </button>
 
     <div class="header__mobile-burger">
-    <ul class="header__mobile-list list">
-        <li class="header__mobile-item"><a href="index.html" class="header__mobile-link">Главная</a></li>
-        <li class="header__mobile-item"><a href="partners.html" class="header__mobile-link">Партнёрам</a></li>
-        <li class="header__mobile-item"><a href="form.html" class="header__mobile-link">Карьера</a></li>
-        <li class="header__mobile-item"><a href="company.html" class="header__mobile-link">Компания</a></li>
-        <li class="header__mobile-item"><a href="services.html" class="header__mobile-link">Услуги</a></li>
-        <li class="header__mobile-item"><a href="portfolio.html" class="header__mobile-link">Кейсы</a></li>
-        <li class="header__mobile-item"><a href="contacts.html" class="header__mobile-link">Контакты</a></li>
-    </ul>
-    <div class="header__mobile-footer">
-        <svg class="logo__mobile" width="252" height="70" viewBox="0 0 252 70">
-            <use xlink:href="img/sprite.svg#logo_mobile"></use>
-        </svg>
-        <div class="header__mobile-contact">
-            <p>
-                Санкт-Петербург, пр. Энгельса д74, к2
-            </p>
-            <a href="tel:+78122932229">
-                +7 (812) 293-22-29
-            </a>
-            <a href="mailto:info@fingli.ru">info@fingli.ru</a>
+        <ul class="header__mobile-list list">
+            <li class="header__mobile-item"><a href="index.html" class="header__mobile-link">Главная</a></li>
+            <li class="header__mobile-item"><a href="partners.html" class="header__mobile-link">Партнёрам</a></li>
+            <li class="header__mobile-item"><a href="form.html" class="header__mobile-link">Карьера</a></li>
+            <li class="header__mobile-item"><a href="company.html" class="header__mobile-link">Компания</a></li>
+            <li class="header__mobile-item"><a href="services.html" class="header__mobile-link">Услуги</a></li>
+            <li class="header__mobile-item"><a href="portfolio.html" class="header__mobile-link">Кейсы</a></li>
+            <li class="header__mobile-item"><a href="contacts.html" class="header__mobile-link">Контакты</a></li>
+        </ul>
+        <div class="header__mobile-footer">
+            <svg class="logo__mobile" width="252" height="70" viewBox="0 0 252 70">
+                <use xlink:href="img/sprite.svg#logo_mobile"></use>
+            </svg>
+            <div class="header__mobile-contact">
+                <p>
+                    Санкт-Петербург, пр. Энгельса д74,&nbsp;к2
+                </p>
+                <a href="tel:+78122932229">
+                    +7 (812) 293-22-29
+                </a>
+                <a href="mailto:info@fingli.ru">info@fingli.ru</a>
+            </div>
         </div>
-    </div>
     </div>
     <ul class="menu navigation__item list wrap">
         <li class="menu__item">
@@ -64,14 +64,20 @@
     <div class="slogan wrap">
         <div class="slogan__item slogan__item-question">
             <div class="slogan__text">
-                &ndash; Хотите сказать, Fingli сильнее остальных?
+                &ndash;&nbsp;Хотите&nbsp;сказать,&nbsp;Fingli сильнее остальных?
             </div>
+            <svg class="slogan__icon-owl slogan__img" width="212" height="212" viewBox="0 0 212 212">
+                <use xlink:href="img/sprite.svg#owl"></use>
+            </svg>
         </div>
         <div class="slogan__item slogan__item-answer">
             <div class="slogan__text">
-                <p> Нет. Легче, быстрее, &ndash;</p>
+                <p> Нет.&nbsp;Легче,&nbsp;быстрее,&nbsp;&ndash;</p>
                 <p class="special">соблазнительнее.</p>
             </div>
+            <svg class="slogan__icon-robot slogan__img" width="195" height="195" viewBox="0 0 195 195">
+                <use xlink:href="img/sprite.svg#robot"></use>
+            </svg>
         </div>
         <span class="slogan__author">Клиент — Максим Кеноби</span>
     </div>
@@ -114,7 +120,7 @@
             <div class="services__item services__item-img">
                 <!--                <img class="services__img" src="img/services.jpg" srcset="img/services@2x.jpg 2x"-->
                 <!--                     alt="да-да, именно тут творят чудеса IT">-->
-                <a href="#" class="services__img-desc">услуги</a>
+                <a href="#" class="services__link">услуги</a>
             </div>
             <div class="services__item">
                 <h3 class="services__title-list">Оказываем профессиональный подход к <br> работе по следующим
@@ -273,11 +279,13 @@
                 <div class="portfolio__preview">
                     <img src="img/rudenko.jpg" srcset="img/rudenko@2x.jpg 2x" alt="Проект разработка сайта">
                 </div>
-                <ul class="portfolio__tags tags list">
-                    <li class="tags__item">направление</li>
-                    <li class="tags__item">направление</li>
-                </ul>
-                <h3 class="portfolio__title">РАЗРАБОТКА САЙТА <span>ART RUDENKO</span></h3>
+                <div class="portfolio__desk">
+                    <ul class="portfolio__tags tags list">
+                        <li class="tags__item">направление</li>
+                        <li class="tags__item">направление</li>
+                    </ul>
+                    <h3 class="portfolio__title">РАЗРАБОТКА САЙТА <span>ART RUDENKO</span></h3>
+                </div>
             </div>
 
             <div class="portfolio__item">
@@ -285,33 +293,39 @@
                     <img src="img/fingli_group.jpg" srcset="img/fingli_group_@2x.jpg 2x"
                          alt="Проект дизайн и разработка сайта">
                 </div>
+                <div class="portfolio__desk">
                 <ul class="portfolio__tags tags list">
                     <li class="tags__item">направление</li>
                     <li class="tags__item">направление</li>
                 </ul>
                 <h3 class="portfolio__title">ДИЗАЙН И РАЗРАБОТКА САЙТА <span>FINGLI GROUP</span></h3>
+                </div>
             </div>
 
             <div class="portfolio__item">
                 <div class="portfolio__preview">
                     <img src="img/delaform.jpg" srcset="img/delaform@2x.jpg 2x" alt="Продвижение сайта">
                 </div>
+                <div class="portfolio__desk">
                 <ul class="portfolio__tags tags list">
                     <li class="tags__item">направление</li>
                     <li class="tags__item">направление</li>
                 </ul>
                 <h3 class="portfolio__title">ПРОДВИЖЕНИЕ <span>DELAFORM</span></h3>
+                </div>
             </div>
 
             <div class="portfolio__item">
                 <div class="portfolio__preview">
                     <img src="img/severcode.jpg" srcset="img/severcode@2x.jpg 2x" alt="Проект ребрендинг">
                 </div>
+                <div class="portfolio__desk">
                 <ul class="portfolio__tags tags list">
                     <li class="tags__item">направление</li>
                     <li class="tags__item">направление</li>
                 </ul>
                 <h3 class="portfolio__title">РЕБРЕНДИНГ <span>SEVERCODE</span></h3>
+                </div>
             </div>
         </div>
         <a href="#" class="portfolio__link special-link">все кейсы
@@ -530,7 +544,7 @@
                     <svg width="388" height="1" viewBox="0 0 388 1">
                         <use xlink:href="img/sprite.svg#contact_line"></use>
                     </svg>
-                    <span class="contacts__link">Санкт-Петербург, пр. Энгельса д74, к2</span>
+                    <span class="contacts__link">Санкт-Петербург, пр.&nbsp;Энгельса д74,&nbsp;к2</span>
                 </div>
                 <a class="special-link" href="#">ПОСМОТРЕТЬ НА КАРТЕ</a>
             </div>
@@ -562,7 +576,7 @@
             <a href="form.html" class="vacancy__link special-link">Соискателей</a>
         </div>
         <div class="footer__item contact">
-            <span class="contact__address">Санкт-Петербург, пр. Энгельса д74, к2</span>
+            <span class="contact__address">Санкт-Петербург, пр. Энгельса д74,&nbsp;к2</span>
             <a href="tel:+78122932229" class="contact__phone">+7 (812) 293-22-29</a>
             <a href="mailto:info@fingli.ru" class="contact__email">info@fingli.ru</a>
         </div>

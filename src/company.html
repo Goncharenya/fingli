@@ -20,10 +20,10 @@
             <li class="header__mobile-item"><a href="index.html" class="header__mobile-link">Главная</a></li>
             <li class="header__mobile-item"><a href="partners.html" class="header__mobile-link">Партнёрам</a></li>
             <li class="header__mobile-item"><a href="form.html" class="header__mobile-link">Карьера</a></li>
-            <li class="header__mobile-item"><a href="" class="header__mobile-link">Компания</a></li>
-            <li class="header__mobile-item"><a href="#" class="header__mobile-link">Услуги</a></li>
-            <li class="header__mobile-item"><a href="#" class="header__mobile-link">Кейсы</a></li>
-            <li class="header__mobile-item"><a href="#" class="header__mobile-link">Контакты</a></li>
+            <li class="header__mobile-item"><a href="company.html" class="header__mobile-link">Компания</a></li>
+            <li class="header__mobile-item"><a href="services.html" class="header__mobile-link">Услуги</a></li>
+            <li class="header__mobile-item"><a href="portfolio.html" class="header__mobile-link">Кейсы</a></li>
+            <li class="header__mobile-item"><a href="contacts.html" class="header__mobile-link">Контакты</a></li>
         </ul>
         <div class="header__mobile-footer">
             <svg class="logo__mobile" width="252" height="70" viewBox="0 0 252 70">
@@ -40,7 +40,7 @@
         <li class="menu__item">
             <button class="menu__link btn btn-start">START PROJECT</button>
         </li>
-        <li class="menu__item menu__item--mobile"><a href="" class="menu__link">ПАРТНЁРАМ</a></li>
+        <li class="menu__item menu__item--mobile"><a href="partners.html" class="menu__link">ПАРТНЁРАМ</a></li>
         <li class="menu__item menu__item--mobile"><a href="form.html" class="menu__link">КАРЬЕРА</a></li>
         <li class="menu__item header__logo logo navigation__item">
             <a class="logo__link" href="index.html">
@@ -49,10 +49,10 @@
                 </svg>
             </a>
         </li>
-        <li class="menu__item menu__item--mobile"><a href="" class="menu__link">Компания</a></li>
-        <li class="menu__item menu__item--mobile"><a href="" class="menu__link">Услуги</a></li>
-        <li class="menu__item menu__item--mobile"><a href="" class="menu__link">Кейсы</a></li>
-        <li class="menu__item menu__item--mobile"><a href="" class="menu__link">Контакты</a></li>
+        <li class="menu__item menu__item--mobile"><a href="company.html" class="menu__link">Компания</a></li>
+        <li class="menu__item menu__item--mobile"><a href="services.html" class="menu__link">Услуги</a></li>
+        <li class="menu__item menu__item--mobile"><a href="portfolio.html" class="menu__link">Кейсы</a></li>
+        <li class="menu__item menu__item--mobile"><a href="contacts.html" class="menu__link">Контакты</a></li>
     </ul>
 </nav>
 <header class="header-company wrap">
@@ -86,7 +86,7 @@
     </div>
 </header>
 
-<main>
+<main class="main">
     <div class="interview-title wrap">
         <div class="interview-title__box">
             <div class="interview-title__item">
@@ -98,8 +98,8 @@
             </div>
         </div>
     </div>
-    <section class="interview wrap">
-        <div class="interview__head">
+    <section class="interview">
+        <div class="interview__head wrap">
             <div class="interview__head-content">
                 <p>20 <br>21</p>
                 <p>интервью</p>
@@ -108,7 +108,7 @@
 
         </div>
 
-        <div class="interview__item interview__item-one">
+        <div class="interview__item interview__item-one wrap">
             <div class="interview__questions">
                 <span class="interview__number">01.</span>
                 <div class="interview__text">
@@ -116,19 +116,20 @@
                 </div>
             </div>
             <div class="interview__answer">
-                <p class="interview__answer-part1">Fingli Group появилась в 2013 году, но до этого момента у меня
-                    уже был опыт руководства IT-компанией. Было понимание того, в каком направлении развиваться
-                    и как строить систему работы внутри компании.</p>
-                <p class="interview__answer-part2">Хотя в целом мне неважно, в какой сфере руководить — будь
-                    то IT или нефтедобывающая вышка, — моё образование и опыт работы позволяют успешно справляться
-                    с решением задач в любом направлении.</p>
-                <div class="interview__answer-img">
-
+                <div class="interview__answer-block">
+                    <p class="interview__answer-part1">Fingli Group появилась в 2013 году, но до этого момента у меня
+                        уже был опыт руководства IT-компанией. Было понимание того, в каком направлении развиваться
+                        и как строить систему работы внутри компании.</p>
+                    <p class="interview__answer-part2">Хотя в целом мне неважно, в какой сфере руководить — будь
+                        то IT или нефтедобывающая вышка, — моё образование и опыт работы позволяют успешно справляться
+                        с решением задач в любом направлении.</p>
                 </div>
+                <div class="interview__answer-img"></div>
             </div>
+
         </div>
 
-        <div class="interview__item interview__item-two">
+        <div class="interview__item interview__item-two wrap">
             <div class="interview__bg"></div>
             <div class="interview__block">
                 <div class="interview__questions">
@@ -189,6 +190,7 @@
                         Как строится ваша работа с клиентами?
                     </div>
                     <div class="interview__answer">
+                        <div class="interview__answer-block">
                         <p class="interview__answer-part1">
                             Мы стараемся находить подход к любому клиенту. Некоторые, например, переживают, что не
                             смогут
@@ -200,16 +202,25 @@
                             положиться на
                             нашу команду.
                         </p>
+                        <p class="interview__answer-part2">
+                            Я считаю, что в этом заключается одна из сильных сторон Fingli Group - наши специалисты
+                            могут расположить к себе клиента своей уверенностью и компетентностью.
+
+
+                            И тот факт, что все наши клиенты приходят к нам по рекомендации тех, кто уже работал с нами,
+                            только подтверждает, что мы всё делаем правильно.
+                        </p>
+                        </div>
                     </div>
                 </div>
                 <div class="interview__bg">
-                    <img src="img/answer_bg_4.jpg" height="301" width="660" alt="">
+                    <!--                    <img src="img/answer_bg_4.jpg" height="301" width="660" alt="">-->
                 </div>
             </div>
 
         </div>
 
-        <div class="interview__item interview__item-five">
+        <div class="interview__item interview__item-five wrap">
             <div class="interview__questions">
                 <span class="interview__number">05.</span>
                 <div class="interview__text">
@@ -238,7 +249,7 @@
             </div>
         </div>
 
-        <div class="interview__item interview__item-six">
+        <div class="interview__item interview__item-six wrap">
             <div class="interview__wrapper">
                 <div class="interview__questions">
                     <span class="interview__number">06.</span>
@@ -317,9 +328,15 @@
     </section>
 
 
-    <section>
-        <a href="partners.html">СТАТЬ ПАРТНЁРОМ</a>
-        <a href="career.html">РАБОТА В FINGLI</a>
+    <section class="work wrap">
+        <div class="work__item">
+            <a class="work__partners work__link" href="partners.html">СТАТЬ ПАРТНЁРОМ</a>
+            <span class="work__arr"></span>
+        </div>
+        <div class="work__item">
+            <a class="work__vacancy work__link" href="career.html">РАБОТА В FINGLI</a>
+            <span class="work__arr"></span>
+        </div>
     </section>
 
     <section class="blog wrap">
