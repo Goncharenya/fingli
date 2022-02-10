@@ -19,7 +19,7 @@
         <ul class="header__mobile-list list">
             <li class="header__mobile-item"><a href="index.html" class="header__mobile-link">Главная</a></li>
             <li class="header__mobile-item"><a href="partners.html" class="header__mobile-link">Партнёрам</a></li>
-            <li class="header__mobile-item"><a href="form.html" class="header__mobile-link">Карьера</a></li>
+            <li class="header__mobile-item"><a href="career.html" class="header__mobile-link">Карьера</a></li>
             <li class="header__mobile-item"><a href="company.html" class="header__mobile-link">Компания</a></li>
             <li class="header__mobile-item"><a href="services.html" class="header__mobile-link">Услуги</a></li>
             <li class="header__mobile-item"><a href="portfolio.html" class="header__mobile-link">Кейсы</a></li>
@@ -41,7 +41,7 @@
             <button class="menu__link btn btn-start">START PROJECT</button>
         </li>
         <li class="menu__item menu__item--mobile"><a href="partners.html" class="menu__link">ПАРТНЁРАМ</a></li>
-        <li class="menu__item menu__item--mobile"><a href="form.html" class="menu__link">КАРЬЕРА</a></li>
+        <li class="menu__item menu__item--mobile"><a href="career.html" class="menu__link">КАРЬЕРА</a></li>
         <li class="menu__item header__logo logo navigation__item">
             <a class="logo__link" href="index.html">
                 <svg class="logo__icon" width="98" height="29" viewBox="0 0 98 29">
@@ -58,19 +58,19 @@
 <header class="header-company wrap">
     <div class="header-company__slogan slogan-company slogan__text">
         <div class="slogan-company__item">
-            <p>ВОСПИТАНЫ</p>
+            <p class="slogan-company__text">ВОСПИТАНЫ</p>
             <div class="slogan-company__decor decor">
                 <span class="decor__item"></span>
                 <span class="decor__item"></span>
                 <span class="decor__item"></span>
                 <span class="decor__item"></span>
             </div>
-            <p class="_special">ОПЫТОМ</p>
+            <p class="_special slogan-company__text">ОПЫТОМ</p>
         </div>
         <div class="slogan-company__item">
             <p>И</p>
             <span class="slogan-company__arr"></span>
-            <p>УВЕРЕНЫ</p>
+            <p class="slogan-company__text">УВЕРЕНЫ</p>
         </div>
         <div class="slogan-company__item">
             <div class="decor-cube">
@@ -81,12 +81,12 @@
                 <span class="decor-cube__item"></span>
             </div>
             <p>В</p>
-            <p class="_special">ЗНАНИЯХ</p>
+            <p class="_special slogan-company__text">ЗНАНИЯХ</p>
         </div>
     </div>
 </header>
 
-<main class="main">
+<main class="main-company">
     <div class="interview-title wrap">
         <div class="interview-title__box">
             <div class="interview-title__item">
@@ -191,25 +191,29 @@
                     </div>
                     <div class="interview__answer">
                         <div class="interview__answer-block">
-                        <p class="interview__answer-part1">
-                            Мы стараемся находить подход к любому клиенту. Некоторые, например, переживают, что не
-                            смогут
-                            контролировать процесс, так как не разбираются в сфере IT. Но вам и не нужно в этом
-                            разбираться
-                            -
-                            это наша задача, для этого вы к нам и обратились. И тем клиентам, которые предпочитают
-                            контролировать весь процесс, мы стараемся делом доказать, что нам можно доверять и
-                            положиться на
-                            нашу команду.
-                        </p>
-                        <p class="interview__answer-part2">
-                            Я считаю, что в этом заключается одна из сильных сторон Fingli Group - наши специалисты
-                            могут расположить к себе клиента своей уверенностью и компетентностью.
+                            <p class="interview__answer-part1">
+                                Мы стараемся находить подход к любому клиенту. Некоторые, например, переживают, что не
+                                смогут
+                                контролировать процесс, так как не разбираются в сфере IT. Но вам и не нужно в этом
+                                разбираться
+                                -
+                                это наша задача, для этого вы к нам и обратились. И тем клиентам, которые предпочитают
+                                контролировать весь процесс, мы стараемся делом доказать, что нам можно доверять и
+                                положиться на
+                                нашу команду.
+                            </p>
+                            <div class="interview__answer-part2">
+                                <p>Я считаю, что в этом заключается одна из сильных сторон Fingli Group - наши
+                                    специалисты
+                                    могут расположить к себе клиента своей уверенностью и компетентностью.
+                                </p> <br>
 
-
-                            И тот факт, что все наши клиенты приходят к нам по рекомендации тех, кто уже работал с нами,
-                            только подтверждает, что мы всё делаем правильно.
-                        </p>
+                                <p>
+                                    И тот факт, что все наши клиенты приходят к нам по рекомендации тех, кто уже работал
+                                    с нами,
+                                    только подтверждает, что мы всё делаем правильно.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -272,7 +276,6 @@
                     </div>
                 </div>
                 <div class="interview__bg">
-                    <img src="img/answer_bg_6.jpg" width="572" height="300" alt="">
                 </div>
 
             </div>
@@ -280,7 +283,7 @@
 
     </section>
 
-    <section class="clients wrap">
+    <section class="clients wrap main-company__clients">
         <div class="clients__box-title-arrow">
             <h2 class="clients__title title">НАШИ КЛИЕНТЫ</h2>
             <div class="clients__title-arrow">

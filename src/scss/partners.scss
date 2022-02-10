@@ -1,0 +1,265 @@
+
+
+.main-partners {
+  .partners__title {
+    font-weight: 400;
+    padding-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 48px;
+      line-height: 58px;
+      padding-bottom: 10px;
+    }
+
+    @media (max-width: 520px) {
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: normal;
+      letter-spacing: normal;
+      padding-bottom: 5px;
+    }
+  }
+}
+.slogan-page {
+  margin-bottom: 10rem;
+  margin-top: 7rem;
+
+  @media (max-width: 768px) {
+    margin-bottom: 5rem;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: 320px) {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 36px;
+    line-height: 61px;
+    position: relative;
+    text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    @media (max-width: 520px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &:before {
+      content: "";
+      width: 130px;
+      height: 10px;
+      background: url("../img/arrow_partners.svg") no-repeat;
+      //position: absolute;
+      display: inline-block;
+      margin-bottom: 5px;
+
+      @media (max-width: 768px) {
+        margin-left: -35px;
+      }
+
+      @media (max-width: 768px) {
+        margin-left: -65px;
+        width: 100px;
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+// partners__greeting
+
+
+
+.partners-greeting__container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-column-gap: 20px;
+  margin-bottom: 10rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 5rem;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 3.75rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 320px) {
+    margin-bottom: 2rem;
+  }
+}
+
+.partners-greeting__animation {
+  background: $basicDarkGrey;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+    min-height: 192px;
+  }
+}
+
+//animation
+
+.animation {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.animation__item {
+  list-style: none;
+}
+
+.animation__label {
+  position: relative;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+  z-index: 100;
+}
+
+.animation__letter {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  background: $basicDarkGrey;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 46px;
+  cursor: pointer;
+  margin: 0 4px;
+
+  @media (max-width: 1024px) {
+    width: 60px;
+    font-size: 38px;
+  }
+
+  @media (max-width: 768px) {
+    width: 40px;
+    font-size: 30px;
+  }
+}
+
+.animation__input:checked ~ .animation__letter {
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+  inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+//animation__end
+
+
+.partners-greeting__item {
+  background: $basicDarkGrey;
+  position: relative;
+
+  .partners-greeting__description {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  &:nth-child(2) {
+    background: url("../img/greeting__img.jpg") no-repeat center;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &:last-child {
+    background: transparent;
+
+    @media (max-width: 480px) {
+      margin-top: 20px;
+    }
+  }
+
+  .partners-greeting__link {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @media (max-width: 480px) {
+      left: 38%;
+      bottom: -15px;
+    }
+  }
+}
+
+//services
+
+.partners__services {
+  .services__box {
+    flex-direction: row-reverse;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+
+    .services__title-list {
+
+      @media (max-width: 600px) {
+        margin-top: 20px;      }
+    }
+
+    .services__item-img {
+      margin-right: 0;
+      margin-left: 20px;
+      background-position: right;
+
+      @media (max-width: 600px) {
+        background-size: cover;
+        margin-left: 0;
+      }
+
+      .services__link {
+        bottom: 20px;
+        left: 60px;
+      }
+    }
+
+    .services__title-list {
+      br {
+        display: none;
+      }
+    }
+  }
+}

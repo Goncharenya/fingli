@@ -1,0 +1,398 @@
+.header-career__slogan {
+  font-weight: 300;
+  letter-spacing: 2px;
+
+  .slogan__item {
+    margin-top: 6.3rem;
+
+    @media (max-width: 768px) {
+      margin-top: 3.5rem;
+    }
+  }
+
+  .special {
+    color: $basicRed;
+    margin-left: -10rem;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
+
+  }
+
+  @media (max-width: 480px) {
+    .slogan__text {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+  .slogan__item-question {
+    @media (max-width: 480px) {
+      position: relative;
+
+      .slogan__dart__career_1 {
+        position: absolute;
+        right: 47px;
+        width: 100px;
+        top: -17px;
+      }
+    }
+  }
+
+  .slogan__item-answer {
+    position: relative;
+
+    .slogan__text {
+
+      @media (max-width: 768px) {
+        margin-top: 0;
+      }
+
+      .slogan__text-item {
+        margin-right: 6rem;
+
+        @media (max-width: 768px) {
+          margin-right: 3.5rem;
+        }
+
+        @media (max-width: 480px) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .slogan__dart__career_2 {
+      opacity: .1;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      @media (max-width: 480px) {
+        opacity: 1;
+        width: 116px;
+        left: 20px;
+      }
+    }
+  }
+
+
+  .slogan__author {
+    margin-bottom: 2rem;
+  }
+}
+
+.career-greeting__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr min-content max-content;
+  grid-column-gap: 20px;
+
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .career-greeting__item {
+    &:nth-child(2) {
+      background: url("../img/career_greeting_pic.jpg") no-repeat;
+      width: 252px;
+      min-height: 300px;
+
+      @media (max-width: 480px) {
+        background: url("../img/career_bg.jpg") no-repeat;
+        width: 100%;
+        min-height: 192px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &:nth-child(3) {
+      background: url("../img/career_greeting.jpg") no-repeat;
+      width: 660px;
+      min-height: 300px;
+
+      @media (max-width: 1280px) {
+        width: 360px;
+      }
+
+      @media (max-width: 940px) {
+        display: none;
+      }
+    }
+  }
+
+  .career-greeting__description {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 27px;
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+
+  .special-link {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @media (max-width: 480px) {
+      bottom: -30px;
+      left: 10%;
+    }
+
+    &:last-child {
+      left: 160px;
+
+      @media (max-width: 480px) {
+        bottom: -30px;
+        left: 75%;
+      }
+    }
+  }
+}
+
+//team-slogan
+
+.team-slogan {
+  width: 100%;
+  background: $basicDarkGrey;
+  min-height: 116px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+
+  @media (max-width: 768px) {
+    margin-top: 5rem;
+    min-height: 100px;
+  }
+
+  @media (max-width: 480px) {
+
+    min-height: 50px;
+  }
+
+  .team-slogan__content {
+    color: $basicWhite;
+    font-size: 36px;
+    line-height: 61px;
+    text-transform: uppercase;
+    margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 31px;
+      line-height: 53px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+}
+
+.main-career {
+  .slogan-page {
+    margin-top: 0;
+
+    p {
+      @media (max-width: 768px) {
+        margin-top: -10px;
+        line-height: 61px;
+        text-indent: 40px;
+        overflow: hidden;
+      }
+
+      @media (max-width: 521px) {
+        font-size: 16px;
+        line-height: 19px;
+
+        br {
+          display: none;
+        }
+      }
+
+      &:before {
+        @media (max-width: 521px) {
+          margin-left: -112px;
+          width: 95px;
+        }
+      }
+    }
+  }
+
+  .main-career__vacancy {
+    .vacancy__box {
+      margin-top: 8rem;
+
+      @media (max-width: 968px) {
+        margin-top: 5rem;
+        margin-bottom: 6rem;
+      }
+
+      @media (max-width: 480px) {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+    .main-career__vacancy-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      @media (max-width: 480px) {
+        align-items: center;
+      }
+
+      .vacancy__open {
+        margin-top: 0;
+        margin-right: 3.5rem;
+        font-weight: 200;
+
+        @media (max-width: 480px) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .vacancy__box-item {
+      .accordion__box {
+
+        @media (max-width: 968px) {
+          margin-bottom: 0;
+        }
+      }
+
+      .vacancy__mail {
+        border-bottom: 1px solid $basicDarkGrey;
+      }
+
+      &:first-child {
+        width: 70%;
+
+        @media (max-width: 968px) {
+          width: 100%;
+        }
+      }
+
+      &:last-child {
+        width: 30%;
+        margin-top: 5rem;
+
+        @media (max-width: 968px) {
+          position: static;
+          margin-top: 0;
+        }
+
+        @media (max-width: 480px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .accordion__description {
+      font-size: 14px;
+      line-height: 24px;
+
+      p {
+        margin: 20px 80px 50px 20px;
+
+        @media (max-width: 480px) {
+          margin: 20px;
+        }
+
+        &:nth-child(3) {
+          margin-bottom: 10px;
+        }
+      }
+
+      .send-resume {
+        display: flex;
+        background: $basicDarkGrey;
+        padding: 1rem;
+        color: $basicWhite;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        button {
+          padding: 0;
+          color: $basicWhite;
+          text-transform: uppercase;
+          border-bottom: .5px solid $basicWhite;
+        }
+      }
+    }
+  }
+}
+
+.main-career__vacancy {
+
+  .accordion__title {
+    border-bottom: 2px solid $basicDarkGrey;
+    background: url("../img/plus.svg") no-repeat 100%;
+
+    @media (max-width: 572px) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .vacancy__tags {
+      margin-right: 50px;
+      @media (max-width: 572px) {
+        display: flex;
+      }
+    }
+
+    &:hover {
+      background-image: url("../img/plus_white.svg");
+      background-repeat: no-repeat;
+      background-position: 98%;
+
+      .vacancy__tags {
+
+        button {
+          color: $opacity_60_White;
+          border: 1px solid $opacity_60_White;
+        }
+      }
+    }
+  }
+
+  ._active {
+    .accordion__title {
+      background: url("../img/minus.svg") no-repeat 98%;
+
+      &:hover .vacancy__tags {
+        button {
+          color: $basicDarkGrey;
+          border: 1px solid $basicDarkGrey;
+        }
+      }
+    }
+
+    ._active .vacancy__tags {
+      button {
+        color: $basicDarkGrey;
+        border: 1px solid $basicDarkGrey;
+      }
+    }
+  }
+}
+
+//.contacts__title
+
+
+.main-career {
+  .contacts__title {
+    margin-top: 0;
+  }
+}
+
+

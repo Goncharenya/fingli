@@ -5,19 +5,26 @@ input {
 
 
 .header-form-career {
-  background: url("../img/form_bg_slogan.svg") no-repeat 0 38%;
+
+  .header-form-career__box {
+    background: url("../img/form_bg_slogan.svg") no-repeat 0 38%;
+
+    @media (max-width: 1280px) {
+      background-size: contain;
+    }
+  }
 
   .slogan__item-question,
   .slogan__item-answer {
     background: none;
   }
 
-  //.slogan__item p {
-  //  text-align: left;
-  //  font-size: 96px;
-  //  line-height: 116px;
-  //  text-indent: 80px;
-  //}
+  .slogan__item-question {
+
+    .slogan__text {
+      width: 100%;
+    }
+  }
 }
 
 .header .slogan__item .header-form-career__slogan {
@@ -31,6 +38,11 @@ input {
 .contact-details {
   background: url("../img/logo_owl.svg") no-repeat right top;
   padding-bottom: 110px;
+
+  @media (max-width: 1280px) {
+    background: url("../img/logo_owl_50.svg") no-repeat right top;
+    padding-bottom: 0;
+  }
 }
 
 .form {
@@ -46,6 +58,10 @@ input {
     border-radius: 4px;
     margin-bottom: 30px;
     width: 26%;
+
+    @media (max-width: 1280px) {
+      width: 58%;
+    }
 
     &:hover {
       border: 2px solid rgba(20, 19, 18, 0.6);
@@ -64,9 +80,16 @@ input {
 }
 
 .form__description {
-  width: 26%;
+  width: 27%;
   margin-top: 109px;
   margin-bottom: 50px;
+  font-size: 1rem;
+  line-height: 27px;
+
+  @media (max-width: 1280px) {
+    width: 55%;
+    margin-top: 10px;
+  }
 }
 
 
@@ -87,6 +110,11 @@ input {
   display: flex;
   align-items: center;
 
+  @media (max-width: 1280px) {
+    min-height: auto;
+    padding-top: 7rem;
+  }
+
   &:before {
     content: "";
     position: absolute;
@@ -95,14 +123,18 @@ input {
     background: $form_bg;
     left: -159px;
     top: -60px;
+
+    @media (max-width: 1280px) {
+      display: none;
+    }
   }
 
   .questionnaire__box {
     display: grid;
     grid-template-columns: 2fr 1fr 3fr;
 
-    @media (max-width: 1220px) {
-      grid-template-columns: 2fr 1fr 3fr;
+    @media (max-width: 1280px) {
+      grid-template-columns: 1fr;
     }
   }
 
@@ -113,28 +145,92 @@ input {
     border-width: 285px 0 285px 252px;
     border-color: transparent transparent transparent $form_bg;
     margin-left: -1px;
+
+    @media (max-width: 1280px) {
+      display: none;
+    }
   }
+
   .triangle-white {
     border-color: transparent transparent transparent $basicWhite;
+
+    @media (max-width: 1280px) {
+      display: none;
+    }
   }
 
   &:nth-child(even) {
     &:before {
       background: $basicWhite;
 
+
+    }
+  }
+
+  &:nth-child(even) {
+    .questionnaire__question {
+      background: $basicWhite;
+
+      @media (max-width: 1280px) {
+        background: transparent;
+      }
+
+      .questionnaire__number {
+        color: rgba(20, 19, 18, 0.1);
+
+        @media (max-width: 1280px) {
+          color: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+
+    .questionnaire__title {
+      color: $basicDarkGrey;
+
+      @media (max-width: 1280px) {
+        color: $basicWhite;
+        width: 60%;
+      }
+
+      &:after {
+        position: absolute;
+        content: "";
+        width: 150px;
+        background: rgba(20, 19, 18, 0.3);
+        height: 1px;
+        bottom: -12px;
+        left: 0;
+
+        @media (max-width: 1280px) {
+          background: rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+
+    .questionnaire__comment {
+      color: rgba(20, 19, 18, 0.6);
+
+      @media (max-width: 1280px) {
+        color: rgba(255, 255, 255, 0.6);
+      }
     }
   }
 }
 
+
 .questionnaire__item--last-child {
-  align-items: flex-start;
+  align-items: center;
+
+  @media (max-width: 1280px) {
+    padding-top: 0;
+  }
 
   &:before {
     content: "";
     position: absolute;
     width: 1170px;
     top: -21px;
-    left: -374px;
+    left: -423px;
     height: 1268px;
     transform: rotate(45deg);
     background: url("../img/gratitude.svg");
@@ -146,6 +242,12 @@ input {
   align-items: center;
   justify-content: center;
   margin-left: 1rem;
+
+  @media (max-width: 1280px) {
+    margin-left: 0;
+    margin-top: 2rem;
+    align-self: flex-end;
+  }
 }
 
 .questionnaire__question {
@@ -155,8 +257,12 @@ input {
   justify-content: center;
   background: $form_bg;
 
-  @media (max-width: 1220px) {
-    min-width: 280px;
+  @media (max-width: 1280px) {
+    flex-direction: row;
+    justify-content: space-between;
+    background: transparent;
+    align-items: baseline;
+    width: 100%;
   }
 
 
@@ -167,7 +273,12 @@ input {
     letter-spacing: 2px;
     color: $basicWhite;
     position: relative;
-    width: 388px;
+    min-width: 388px;
+
+    @media (max-width: 1280px) {
+      min-width: 50%;
+      letter-spacing: normal;
+    }
 
 
     &:after {
@@ -183,21 +294,22 @@ input {
 
   .questionnaire__comment {
     font-size: 12px;
-    line-height: 170%;
+    line-height: 24px;
     color: $opacity_60_White;
-    width: 388px;
-  }
+    min-width: 388px;
 
-  .questionnaire__number {
-    font-family: Inter, sans-serif;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.1);
-    position: absolute;
-    left: -14%;
-    right: 59%;
-    top: -43%;
+    @media (max-width: 1280px) {
+      min-width: 50%;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      padding-left: 20px;
+      text-align: right;
+    }
   }
 }
+
 .questionnaire__box {
   .questionnaire__number {
     position: absolute;
@@ -209,37 +321,14 @@ input {
     line-height: 174px;
     color: rgba(255, 255, 255, 0.1);
 
+    @media (max-width: 1280px) {
+      left: -25px;
+      top: -100px;
+      font-size: 124px;
+    }
+
     &:nth-child(even) {
       color: red;
-    }
-  }
-}
-
-.questionnaire__item {
-  &:nth-child(even) {
-    .questionnaire__question {
-      background: $basicWhite;
-      .questionnaire__number {
-        color: rgba(20, 19, 18, 0.1);
-      }
-
-    }
-    .questionnaire__title {
-      color: $basicDarkGrey;
-
-      &:after {
-        position: absolute;
-        content: "";
-        width: 150px;
-        background: rgba(20, 19, 18, 0.3);
-        height: 1px;
-        bottom: -12px;
-        left: 0;
-      }
-    }
-
-    .questionnaire__comment {
-      color: rgba(20, 19, 18, 0.6);
     }
   }
 }
@@ -258,6 +347,11 @@ input {
     font-size: 18px;
     line-height: 41px;
     outline: none;
+
+    @media (max-width: 1280px) {
+      margin-top: 2rem;
+      min-height: 150px;
+    }
 
     &::placeholder {
       color: rgba(255, 255, 255, 0.2);
@@ -294,7 +388,7 @@ input {
   line-height: 22px;
   color: $basicWhite;
   padding: 10px 40px 10px 0;
-border-bottom: 1px solid $basicWhite;
+  border-bottom: 1px solid $basicWhite;
   margin-bottom: 1rem;
   width: 100%;
   position: relative;
@@ -355,15 +449,18 @@ border-bottom: 1px solid $basicWhite;
   background: $basicDarkGrey;
   top: 40%;
 }
+
 .questionnaire__checkbox:checked + .questionnaire__label:after {
 
 }
+
 .questionnaire__checkbox:checked + .questionnaire__label {
   background: white;
   color: $basicDarkGrey;
   font-weight: 400;
   padding-left: 20px;
 }
+
 .questionnaire__checkbox:focus + .questionnaire__label {
   padding-left: 20px;
 }
@@ -372,7 +469,7 @@ border-bottom: 1px solid $basicWhite;
   padding-left: 20px;
 }
 
-.questionnaire__checkbox:hover + .questionnaire__label:before  {
+.questionnaire__checkbox:hover + .questionnaire__label:before {
   bottom: 0;
 }
 
@@ -382,6 +479,7 @@ border-bottom: 1px solid $basicWhite;
   border-bottom: 1px solid $opacity_60_White;
   width: 100%;
   color: $basicWhite;
+  font-size: 1rem;
 
   &::placeholder {
     font-size: 18px;
@@ -398,16 +496,52 @@ border-bottom: 1px solid $basicWhite;
   }
 }
 
+.questionnaire__gratitude-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
 
-.questionnaire__item--last-child {
-  .questionnaire__question {
-    background: url("../img/gratitude.svg") no-repeat;
-    min-height: 300px;
+  @media (max-width: 1280px) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
 }
 
+.questionnaire__gratitude {
+  position: relative;
+  background: transparent;
 
+  .questionnaire__gratitude-svg {
+    fill: black;
 
+    @media (max-width: 1280px) {
+      fill: white;
+      //stroke: white;
+      stroke-width: .5px;
+    }
+  }
+}
 
+.questionnaire__sand {
+  color: $basicDarkGrey;
+  padding: 15px 25px;
+  background: $basicWhite;
+  font-size: 18px;
+  line-height: 30px;
+  min-width: 380px;
+  display: block;
+}
 
+.footer {
+
+  @media (max-width: 1280px) {
+    background: $basicDarkGrey;
+    .footer__item {
+      p, a, span {
+        color: $basicWhite;
+      }
+    }
+  }
+}
 
