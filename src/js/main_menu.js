@@ -3,12 +3,9 @@ const body = document.querySelector('body'),
     lineBox = document.querySelector('.line-box'),
     navList = document.querySelector('.header__mobile-list');
 
-// body.classList.remove("no-js");
-// navList.classList.remove("_active");
-// lineBox.classList.remove("menu__hidden");
 
-lineBox.addEventListener("click", function () {
-
+lineBox.addEventListener("click", function (event) {
     headerMenu.classList.toggle("_active");
-   // lineBox.classList.toggle("menu__close");
+
 });
+

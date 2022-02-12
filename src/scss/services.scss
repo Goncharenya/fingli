@@ -3,10 +3,24 @@
 
   .services-main__accordion {
     margin-top: 10rem;
+
+    @media (max-width: 768px) {
+      margin-top: 5rem;
+    }
+
+    @media (max-width: 480px) {
+      margin-top: 3.75rem;
+    }
   }
+
   .accordion {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 480px) {
+      width: 100%;
+      flex-direction: column-reverse;
+    }
 
     .accordion__box {
       width: 50%;
@@ -14,6 +28,10 @@
 
       @media (max-width: 768px) {
         width: 70%;
+      }
+
+      @media (max-width: 480px) {
+        width: 100%;
       }
     }
 
@@ -23,6 +41,11 @@
 
       @media (max-width: 768px) {
         width: 30%;
+      }
+
+      @media (max-width: 480px) {
+        width: 100%;
+        min-height: 160px;
       }
     }
   }

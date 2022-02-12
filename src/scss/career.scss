@@ -324,6 +324,11 @@
           padding: 0;
           color: $basicWhite;
           text-transform: uppercase;
+          border-bottom: .5px solid transparent;
+
+        }
+
+        &:hover button {
           border-bottom: .5px solid $basicWhite;
         }
       }

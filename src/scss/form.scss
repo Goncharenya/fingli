@@ -531,9 +531,12 @@ input {
   line-height: 30px;
   min-width: 380px;
   display: block;
+  @media (max-width: 1280px) {
+    margin-bottom: 80px;
+  }
 }
 
-.footer {
+.footer-form {
 
   @media (max-width: 1280px) {
     background: $basicDarkGrey;
