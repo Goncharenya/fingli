@@ -220,6 +220,7 @@ button {
     font-size: 0.75rem;
     text-transform: uppercase;
     color: $basicDarkGrey;
+    border-bottom: 1px solid transparent;
 
     @media (max-width: 768px) {
       &:first-child {
@@ -236,10 +237,33 @@ button {
 
   .menu__link {
     display: block;
+    transition: .3s;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 1px;
+      background: $basicRed;
+      transition: .3s;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+
+    &:hover {
+      color: $basicRed;
+    }
 
     @media (max-width: 320px) {
       display: none;
     }
+  }
+
+  .menu__link--current {
+    color: $basicRed;
+    border-bottom: 1px solid $basicRed;
   }
 
   .header__logo {
@@ -793,7 +817,7 @@ button {
     left: 43%
   }
 
-  @media (min-width: 321px) and  (max-width: 351px){
+  @media (min-width: 321px) and (max-width: 351px) {
     bottom: -200px;
     left: 43%
   }
@@ -1032,6 +1056,7 @@ button {
         padding-right: 0;
       }
     }
+
     @media (max-width: 952px) {
       grid-column-start: 1;
       grid-column-end: -1;
@@ -1376,6 +1401,7 @@ button {
 .clients__box {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
+  width: 92vw;
 
 }
 
@@ -1383,9 +1409,10 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: scroll;
 
   @media (max-width: 886px) {
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     justify-content: center;
     li {
       margin: 0 20px 20px 0;
@@ -1432,6 +1459,7 @@ button {
 .start-project {
   background: url("../img/bg_project.jpg") no-repeat center/cover;
   min-height: 704px;
+  position: relative;
 
   @media (max-width: 768px) {
     background-position: 35%;
@@ -1559,6 +1587,9 @@ button {
   padding: 10px;
   margin-bottom: 60px;
   margin-top: 2rem;
+  @keyframes motion {
+
+  }
 
   @media (max-width: 768px) {
     margin-top: 0;
@@ -1881,6 +1912,7 @@ button {
   border-bottom: 1px solid $basicDarkGrey;
   background: url("../img/arrow.svg") no-repeat 98%;
   cursor: pointer;
+  transition: .5s;
 
   &:hover {
     background-color: $basicDarkGrey;
@@ -1889,6 +1921,7 @@ button {
     background-image: url("../img/arrow_white_hover.svg");
     background-repeat: no-repeat;
     background-position: 98%;
+
 
     h2 {
       font-weight: 100;
@@ -2151,4 +2184,215 @@ button {
       right: 0;
     }
   }
+}
+
+
+//popup
+
+
+.popup {
+  position: absolute;
+  right: 13%;
+  top: -40px;
+  width: 1068px;
+  min-height: 725px;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 0 50px #000000;
+
+  .popup__start-project {
+    background: $basicDarkGrey;
+  }
+
+  @media (max-width: 1280px) {
+    width: 980px;
+    min-height: 725px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    min-height: 1024px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    min-height: 320px;
+  }
+
+  @media (max-width: 320px) {
+    width: 100%;
+    min-height: 568px;
+  }
+
+  .popup__box {
+    position: relative;
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    &:after {
+      content: "";
+      width: 93%;
+      background: #ffffff;
+      height: 1px;
+      display: block;
+      position: absolute;
+      top: 60px;
+    }
+
+    .popup__form {
+      display: flex;
+      flex-direction: column;
+      margin-left: 60px;
+      margin-top: 60px;
+      max-width: 672px;
+    }
+
+    .popup__input {
+      color: $basicWhite;
+      font-size: 72px;
+      line-height: 87px;
+      background: none;
+      border: none;
+      border-bottom: 2px solid $basicWhite;
+      transition: .3s;
+      margin-bottom: 3rem;
+      padding: 0 1rem 0 0;
+
+
+      &::placeholder {
+        color: $basicWhite;
+        text-transform: uppercase;
+        font-size: 72px;
+        line-height: 87px;
+        transition: .3s;
+      }
+
+      &:hover::placeholder {
+        color: $basicRed;
+      }
+
+      &:active {
+        background: transparent;
+      }
+
+      &:focus {
+        border-bottom: 2px solid $basicRed;
+      }
+    }
+
+
+    .approval {
+      font-size: 12px;
+      line-height: 20px;
+      position: relative;
+      color: $basicWhite;
+      margin-left: 40px;
+      transition: .3s;
+    }
+
+    .popup__checkbox + label:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: transparent;
+      border: 1px solid $basicWhite;
+      top: 0;
+      left: -40px;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    .popup__checkbox:checked + label:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 8px;
+      background: transparent;
+      border-right: 2px solid $basicWhite;
+      border-bottom: 2px solid $basicWhite;
+      border-radius: 3px;
+      transform: rotate(45deg);
+      top: 3px;
+      left: -36px;
+    }
+
+    .popup__checkbox + label:hover:after {
+      border: 1px solid $basicRed;
+    }
+  }
+
+
+  .popup__box-item--black {
+    .popup__svg-right {
+      margin-left: -3px;
+    }
+  }
+
+  .popup__box-item--white {
+    background: $basicWhite;
+    padding-top: 120px;
+    margin-top: -120px;
+    padding-bottom: 60px;
+    margin-bottom: -120px;
+    padding-left: 60px;
+
+    .popup__svg-left {
+      margin-right: -3px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+
+      }
+    }
+  }
+
+  .popup__box-item--black {
+    display: flex;
+  }
+
+  .popup__close {
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    border: 1px solid $basicWhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 40px;
+  }
+
+  .popup__submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .popup__submit-btn {
+      width: 180px;
+      height: 50px;
+      background-color: $basicWhite;
+      background-image: url("../img/arrow_partners.svg");
+      background-repeat: no-repeat;
+      background-position: -30px 50%;
+      transition: .3s;
+
+      &:hover {
+        background-position: 0 50%;
+      }
+
+      &:focus {
+        background-position: 100% 50%;
+      }
+    }
+  }
+}
+
+.popup-open {
+  display: block;
 }
