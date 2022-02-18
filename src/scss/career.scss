@@ -8,6 +8,11 @@
     @media (max-width: 768px) {
       margin-top: 3.5rem;
     }
+
+    @media (max-width: 320px) {
+      margin-top: 2.5rem;
+    }
+
   }
 
   .special {
@@ -26,6 +31,19 @@
       line-height: 29px;
     }
   }
+
+  .slogan__dart__career_1 {
+    animation: dart__motion 1s ease-out;
+
+    @keyframes dart__motion {
+      0% {
+        transform: translateX(-2000px);
+      }
+      100% {
+        transform: translateX(0px);
+      }}
+  }
+
   .slogan__item-question {
     @media (max-width: 480px) {
       position: relative;
@@ -35,6 +53,11 @@
         right: 47px;
         width: 100px;
         top: -17px;
+
+        @media (max-width: 480px) {
+          opacity: .1;
+          right: 0;
+        }
       }
     }
   }
@@ -52,7 +75,7 @@
         margin-right: 6rem;
 
         @media (max-width: 768px) {
-          margin-right: 3.5rem;
+          margin-right: 2.5rem;
         }
 
         @media (max-width: 480px) {
@@ -69,6 +92,12 @@
 
       @media (max-width: 480px) {
         opacity: 1;
+        width: 116px;
+        left: 20px;
+      }
+
+      @media (max-width: 480px) {
+        opacity: .1;
         width: 116px;
         left: 20px;
       }

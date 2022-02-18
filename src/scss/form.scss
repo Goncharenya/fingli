@@ -130,6 +130,12 @@ input {
   }
 }
 
+.questionnaire__form {
+  @media (max-width: 480px) {
+    width: 99vw;
+  }
+}
+
 .questionnaire__item {
   position: relative;
   min-height: 570px;
@@ -137,13 +143,26 @@ input {
   display: flex;
   align-items: center;
 
+
+  &:nth-child(2) {
+    .checkbox__box {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
   @media (max-width: 1280px) {
     min-height: auto;
     padding-top: 7rem;
   }
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1024px) {
     padding-top: 4rem;
+  }
+
+  @media (max-width: 480px) {
+    display: block;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   &:before {
@@ -223,6 +242,11 @@ input {
         width: 60%;
       }
 
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+
+
       &:after {
         position: absolute;
         content: "";
@@ -282,6 +306,11 @@ input {
     margin-left: 0;
     margin-top: 2rem;
     align-self: flex-end;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 20px;
+
   }
 }
 
@@ -420,6 +449,7 @@ input {
 
     @media (max-width: 480px) {
       min-height: 100px;
+      margin-top: 0;
     }
 
     &::placeholder {
@@ -453,8 +483,8 @@ input {
 
   @media (max-width: 480px) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 40px;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
   }
 }
 
@@ -483,6 +513,11 @@ input {
     padding-left: 20px;
     padding-right: 40px;
     cursor: pointer;
+
+    @media (max-width: 480px) {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
   }
 
   &:hover:after {
@@ -495,6 +530,11 @@ input {
     padding-right: 40px;
     background: $basicWhite;
     color: $basicDarkGrey;
+
+    @media (max-width: 480px) {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
   }
 
   &:active {
@@ -502,11 +542,23 @@ input {
     padding-right: 40px;
     background: $basicWhite;
     color: $basicDarkGrey;
+
+    @media (max-width: 480px) {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
   }
 
   @media (max-width: 480px) {
-    border: 2px solid $basicWhite;
+    border: 1px solid $basicWhite;
     border-radius: 4px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -528,6 +580,10 @@ input {
 .questionnaire__checkbox:checked + .questionnaire__label:before {
   background: $basicDarkGrey;
   top: 40%;
+
+  @media (max-width: 480px) {
+   display: none;
+  }
 }
 
 .questionnaire__checkbox:checked + .questionnaire__label:after {
@@ -539,14 +595,26 @@ input {
   color: $basicDarkGrey;
   font-weight: 400;
   padding-left: 20px;
+
+  @media (max-width: 480px) {
+    padding-left: 8px;
+  }
 }
 
 .questionnaire__checkbox:focus + .questionnaire__label {
   padding-left: 20px;
+
+  @media (max-width: 480px) {
+    padding-left: 8px;
+  }
 }
 
 .questionnaire__checkbox:active + .questionnaire__label {
   padding-left: 20px;
+
+  @media (max-width: 480px) {
+    padding-left: 8px;
+  }
 }
 
 .questionnaire__checkbox:hover + .questionnaire__label:before {
@@ -576,6 +644,7 @@ input {
   }
 }
 
+
 .questionnaire__gratitude-box {
   display: flex;
   justify-content: space-between;
@@ -603,7 +672,7 @@ input {
   }
 }
 
-.questionnaire__sand {
+.questionnaire__send {
   color: $basicDarkGrey;
   padding: 15px 25px;
   background: $basicWhite;
@@ -611,8 +680,21 @@ input {
   line-height: 30px;
   min-width: 380px;
   display: block;
+  text-transform: uppercase;
+
   @media (max-width: 1280px) {
     margin-bottom: 80px;
+  }
+
+  @media (max-width: 480px) {
+    min-width: 290px;
+  }
+}
+
+.questionnaire__back-home {
+  display: none;
+  @media (max-width: 480px) {
+   display: block;
   }
 }
 
@@ -625,6 +707,119 @@ input {
         color: $basicWhite;
       }
     }
+    .footer__box {
+      border-top: 1px solid $opacity_40_White;
+    }
+  }
+  @media (max-width: 480px) {
+    display: none;
   }
 }
+
+
+//questionnaire__pagination
+
+.questionnaire__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: 480px) {
+    display: none;
+  }
+
+  .next,
+  .prew {
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: transparent;
+      border-right: 2px solid $opacity_40_White;
+      border-top: 2px solid $opacity_40_White;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 10px;
+      left: 6px;
+      cursor: pointer;
+    }
+
+    &:hover:before {
+      border-right: 2px solid $basicWhite;
+      border-top: 2px solid $basicWhite;
+    }
+
+    &:hover .next__svg {
+      opacity: 1;
+    }
+    &:hover .prew__svg {
+      opacity: 1;
+    }
+  }
+
+  .next__svg,
+  .prew__svg {
+    stroke: $basicWhite;
+    opacity: .6;
+    cursor: pointer;
+  }
+
+  .prew {
+    &:before {
+      transform: rotate(-135deg);
+      left: 9px;
+    }
+  }
+
+  .current-step {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: $opacity_40_White;
+    margin: 0 20px;
+  }
+}
+
+
+
+//owl
+
+.owl-carousel .owl-stage-outer {
+  min-height: 355px;
+}
+.body .main__form .owl-carousel .owl-nav {
+  text-align: end;
+}
+
+.body .main__form .owl-carousel .owl-nav .owl-next,
+.body .main__form .owl-carousel .owl-nav .owl-prev{
+
+  opacity: .6;
+  width: 35px;
+  height: 35px;
+  &:hover {
+    opacity: 1;
+  }
+  span {
+    opacity: 0;
+  }
+}
+
+.body .main__form .owl-carousel .owl-nav .owl-next {
+  background: url("../img/next.svg") no-repeat center/cover;
+  margin-right: 10px;
+
+}
+
+.body .main__form .owl-carousel .owl-nav .owl-prev {
+  background: url("../img/prev.svg") no-repeat center/cover;
+  margin-right: 50px;
+}
+
+
+
 

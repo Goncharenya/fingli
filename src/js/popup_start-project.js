@@ -21,9 +21,9 @@ document.addEventListener("click", function (e) {
             && popupStartProject.classList.contains('popup-open')
         ) {
             // кликнули не на меню
-            if (e.target.closest('nav.header__menu') === null) {
+            if (e.target.closest('popupStartProject') === null) {
                 // значит его надо закрыть
-                popupStartProject.classList.remove('popup-open')
+                popupStartProject.classList.add('popup-open')
             }
         }
     }
