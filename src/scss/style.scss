@@ -1170,8 +1170,8 @@ button {
       margin: auto;
     }
 
-    @media (max-width: 320px) {
-      padding: 1rem;
+    @media (max-width: 375px) {
+      padding: 0 1rem 1rem;
     }
   }
 }
@@ -1650,29 +1650,27 @@ button {
   .start-project__animation {
     display: block;
     text-align: left;
-    transform: translateX(-500px);
-    animation: motion 4s ease-in-out infinite;
-    animation-fill-mode: backwards;
+    animation: motion-start-project 4s ease-out infinite;
+    animation-fill-mode: both;
   }
 
-  @keyframes motion {
+  @keyframes motion-start-project {
     0% {
-      transform: translateX(1250px);
-
+      transform: translateX(500px);
     }
 
     20% {
-      transform: translateX(10px);
-
+      transform: translateX(-500px);
     }
 
+    50% {
+      transform: translateX(60px);
+    }
     70% {
-      transform: translateX(10px);
-
+      transform: translateX(20px);
     }
     100% {
-      transform: translateX(-1000px);
-
+      transform: translateX(20px);
     }
   }
 

@@ -623,6 +623,12 @@ input {
     align-items: flex-start;
   }
 }
+@media (max-width: 480px) {
+  .questionnaire__gratitude-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 .questionnaire__gratitude {
   position: relative;
@@ -638,16 +644,47 @@ input {
     stroke-width: 0.5px;
   }
 }
+@media (max-width: 480px) {
+  .questionnaire__gratitude .questionnaire__gratitude-svg {
+    width: 60%;
+    height: auto;
+  }
+}
+
+.questionnaire__answer {
+  position: relative;
+}
 
 .questionnaire__send {
   color: #141312;
-  padding: 15px 25px;
+  padding: 15px 0 10px;
   background: #ffffff;
   font-size: 18px;
   line-height: 30px;
   min-width: 380px;
   display: block;
   text-transform: uppercase;
+  border-bottom: 5px solid transparent;
+  text-align: center;
+  transition: 0.3s;
+}
+.questionnaire__send:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 5px;
+  background: #FF3E3E;
+  display: block;
+  transition: 0.3s;
+  right: 0;
+  bottom: 0;
+}
+.questionnaire__send:hover:after {
+  width: 100%;
+  height: 5px;
+  display: block;
+  left: 0;
+  bottom: 0;
 }
 @media (max-width: 1280px) {
   .questionnaire__send {
@@ -657,6 +694,7 @@ input {
 @media (max-width: 480px) {
   .questionnaire__send {
     min-width: 290px;
+    margin-bottom: 0;
   }
 }
 
@@ -686,25 +724,24 @@ input {
   }
 }
 
-.questionnaire__pagination {
+.questionnaire__nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-top: 20px;
   padding-bottom: 20px;
 }
-@media (min-width: 480px) {
-  .questionnaire__pagination {
+@media (min-width: 481px) {
+  .questionnaire__nav {
     display: none;
   }
 }
-.questionnaire__pagination .next,
-.questionnaire__pagination .prew {
+.questionnaire__nav .questionnaire__nav-prev,
+.questionnaire__nav .questionnaire__nav-next {
   position: relative;
 }
-.questionnaire__pagination .next:before,
-.questionnaire__pagination .prew:before {
-  content: "";
+.questionnaire__nav .questionnaire__nav-prev:before,
+.questionnaire__nav .questionnaire__nav-next:before {
   width: 8px;
   height: 8px;
   background: transparent;
@@ -716,30 +753,26 @@ input {
   left: 6px;
   cursor: pointer;
 }
-.questionnaire__pagination .next:hover:before,
-.questionnaire__pagination .prew:hover:before {
+.questionnaire__nav .questionnaire__nav-prev:hover:before,
+.questionnaire__nav .questionnaire__nav-next:hover:before {
   border-right: 2px solid #ffffff;
   border-top: 2px solid #ffffff;
 }
-.questionnaire__pagination .next:hover .next__svg,
-.questionnaire__pagination .prew:hover .next__svg {
+.questionnaire__nav .questionnaire__nav-prev:hover .next__svg,
+.questionnaire__nav .questionnaire__nav-next:hover .next__svg {
   opacity: 1;
 }
-.questionnaire__pagination .next:hover .prew__svg,
-.questionnaire__pagination .prew:hover .prew__svg {
+.questionnaire__nav .questionnaire__nav-prev:hover .prev__svg,
+.questionnaire__nav .questionnaire__nav-next:hover .prev__svg {
   opacity: 1;
 }
-.questionnaire__pagination .next__svg,
-.questionnaire__pagination .prew__svg {
+.questionnaire__nav .next__svg,
+.questionnaire__nav .prev__svg {
   stroke: #ffffff;
   opacity: 0.6;
   cursor: pointer;
 }
-.questionnaire__pagination .prew:before {
-  transform: rotate(-135deg);
-  left: 9px;
-}
-.questionnaire__pagination .current-step {
+.questionnaire__nav .questionnaire__nav-title {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -749,35 +782,6 @@ input {
 
 .owl-carousel .owl-stage-outer {
   min-height: 355px;
-}
-
-.body .main__form .owl-carousel .owl-nav {
-  text-align: end;
-}
-
-.body .main__form .owl-carousel .owl-nav .owl-next,
-.body .main__form .owl-carousel .owl-nav .owl-prev {
-  opacity: 0.6;
-  width: 35px;
-  height: 35px;
-}
-.body .main__form .owl-carousel .owl-nav .owl-next:hover,
-.body .main__form .owl-carousel .owl-nav .owl-prev:hover {
-  opacity: 1;
-}
-.body .main__form .owl-carousel .owl-nav .owl-next span,
-.body .main__form .owl-carousel .owl-nav .owl-prev span {
-  opacity: 0;
-}
-
-.body .main__form .owl-carousel .owl-nav .owl-next {
-  background: url("../img/next.svg") no-repeat center/cover;
-  margin-right: 10px;
-}
-
-.body .main__form .owl-carousel .owl-nav .owl-prev {
-  background: url("../img/prev.svg") no-repeat center/cover;
-  margin-right: 50px;
 }
 
 .header-company__slogan {
@@ -1286,6 +1290,9 @@ input {
     margin-top: 20px;
   }
 }
+.interview__item-three .interview__wrapper {
+  overflow: hidden;
+}
 @media (max-width: 768px) {
   .interview__item-three .interview__wrapper {
     flex-direction: column;
@@ -1296,11 +1303,28 @@ input {
   background: url("../img/easy_for.svg") no-repeat center;
   width: 50%;
   height: auto;
+  animation: motion-interview 2s ease-out;
+}
+@keyframes motion-interview {
+  0% {
+    transform: translateY(-400px);
+  }
+  50% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 @media (max-width: 768px) {
   .interview__item-three .interview__bg {
     width: 100%;
     min-height: 100px;
+  }
+}
+@media (max-width: 375px) {
+  .interview__item-three .interview__bg {
+    background-size: 70%;
   }
 }
 
@@ -1311,6 +1335,11 @@ input {
   margin: auto;
 }
 
+@media (max-width: 375px) {
+  .interview__item-four {
+    padding: 0 20px 20px;
+  }
+}
 .interview__item-four .interview__answer-block {
   display: flex;
 }
@@ -3624,9 +3653,9 @@ button {
     margin: auto;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .resolution__item .resolution__desk {
-    padding: 1rem;
+    padding: 0 1rem 1rem;
   }
 }
 
@@ -4083,22 +4112,24 @@ button {
 .start-project__code .start-project__animation {
   display: block;
   text-align: left;
-  transform: translateX(-500px);
-  animation: motion 4s ease-in-out infinite;
-  animation-fill-mode: backwards;
+  animation: motion-start-project 4s ease-out infinite;
+  animation-fill-mode: both;
 }
-@keyframes motion {
+@keyframes motion-start-project {
   0% {
-    transform: translateX(1250px);
+    transform: translateX(500px);
   }
   20% {
-    transform: translateX(10px);
+    transform: translateX(-500px);
+  }
+  50% {
+    transform: translateX(60px);
   }
   70% {
-    transform: translateX(10px);
+    transform: translateX(20px);
   }
   100% {
-    transform: translateX(-1000px);
+    transform: translateX(20px);
   }
 }
 @media (max-width: 768px) {
