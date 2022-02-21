@@ -161,7 +161,7 @@ input {
 
   @media (max-width: 480px) {
     display: block;
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 3rem;
   }
 
@@ -333,6 +333,7 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2rem;
   }
 
 
@@ -354,6 +355,9 @@ input {
       font-size: 14px;
       line-height: 24px;
       text-align: center;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
 
     }
 
@@ -416,8 +420,7 @@ input {
     @media (max-width: 480px) {
       font-size: 72px;
       line-height: 87px;
-      left: 31%;
-      top: -55px;
+      position: static;
     }
 
 
@@ -709,7 +712,7 @@ input {
     display: block;
     transition: .3s;
     right: 0;
-    bottom: 0;
+    top: 55px;
   }
 
   &:hover {
@@ -777,25 +780,6 @@ input {
   .questionnaire__nav-next {
     position: relative;
 
-    &:before {
-     // content: "";
-      width: 8px;
-      height: 8px;
-      background: transparent;
-      border-right: 2px solid $opacity_40_White;
-      border-top: 2px solid $opacity_40_White;
-      transform: rotate(45deg);
-      position: absolute;
-      top: 10px;
-      left: 6px;
-      cursor: pointer;
-    }
-
-    &:hover:before {
-      border-right: 2px solid $basicWhite;
-      border-top: 2px solid $basicWhite;
-    }
-
     &:hover .next__svg {
       opacity: 1;
     }
@@ -811,8 +795,6 @@ input {
     cursor: pointer;
   }
 
-
-
   .questionnaire__nav-title {
     font-weight: bold;
     font-size: 12px;
@@ -822,42 +804,8 @@ input {
   }
 }
 
-
-
 //owl
 
 .owl-carousel .owl-stage-outer {
   min-height: 355px;
 }
-//.body .main__form .owl-carousel .owl-nav {
-//  text-align: end;
-//}
-//
-//.body .main__form .owl-carousel .owl-nav .owl-next,
-//.body .main__form .owl-carousel .owl-nav .owl-prev{
-//
-//  opacity: .6;
-//  width: 30px;
-//  height: 30px;
-//  &:hover {
-//    opacity: 1;
-//  }
-//  span {
-//    opacity: 0;
-//  }
-//}
-//
-//.body .main__form .owl-carousel .owl-nav .owl-next {
-//  background: url("../img/next.svg") no-repeat center/cover;
-//  margin-right: 10px;
-//
-//}
-//
-//.body .main__form .owl-carousel .owl-nav .owl-prev {
-//  background: url("../img/prev.svg") no-repeat center/cover;
-//  margin-right: 50px;
-//}
-
-
-
-
