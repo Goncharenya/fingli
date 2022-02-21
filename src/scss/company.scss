@@ -1,4 +1,8 @@
 //slogan
+.header-company {
+  overflow: hidden;
+}
+
 .header-company__slogan {
   margin-top: 5rem;
 
@@ -71,6 +75,21 @@
   }
 }
 
+.decor__item {
+  animation: motion-company__decor 1s ease-out .5s;
+  animation-fill-mode: both;
+
+  @keyframes motion-company__decor {
+    0% {
+      transform: translateY(-200px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+
 .slogan-company__item {
   display: flex;
   justify-content: space-between;
@@ -79,7 +98,25 @@
   ._special {
     border: 1px solid $basicDarkGrey;
     padding: 8px 15px;
+  }
 
+  &:first-child {
+
+  ._special {
+    animation: motion-company_special 1s ease-out 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    @keyframes motion-company_special {
+      0% {
+        transform: translateX(500px);
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  }
     @media (max-width: 520px) {
       padding: 0 5px;
     }
@@ -89,7 +126,21 @@
     }
   }
 
+  .company-animation {
+    animation: motion-company 1s ease-out;
+
+    @keyframes motion-company {
+      0% {
+       transform: translateX(-1000px);
+      }
+      100% {
+
+      }
+    }
+  }
+
   .slogan-company__text {
+
     @media (max-width: 320px) {
       font-size: 24px;
       line-height: 29px;
@@ -111,6 +162,18 @@
       display: block;
       width: 50%;
       height: 20px;
+      animation: motion-arr 1s ease-out 1.5s;
+      transform: translateX(-1000px);
+      animation-fill-mode: forwards;
+
+      @keyframes motion-arr  {
+        0% {
+          transform: translateX(-1000px);
+        }
+        100% {
+         transform: translateX(0);
+        }
+      }
     }
   }
 
@@ -120,6 +183,20 @@
       background: $basicDarkGrey;
       color: $basicWhite;
       padding-left: 20%;
+
+      animation: motion_special 1s ease 3s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+
+      @keyframes motion_special {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
 
       @media (max-width: 480px) {
         padding-left: 15%;
@@ -137,6 +214,31 @@
     height: 20px;
     background: $basicDarkGrey;
     margin-right: 60px;
+    animation: motion_decor-cube 1s ease 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    @keyframes motion_decor-cube {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    &:nth-child(2) {
+      animation-delay: 2s;
+    }
+    &:nth-child(3) {
+      animation-delay: 2.2s;
+    }
+    &:nth-child(4) {
+      animation-delay: 2.4s;
+    }
+    &:nth-child(5) {
+      animation-delay: 2.6s;
+    }
 
     @media (max-width: 1088px) {
       margin-right: 30px;
@@ -472,6 +574,7 @@
   @media (max-width: 768px) {
     padding: 40px 20px;
   }
+
   .interview__questions {
     width: 50%;
 
@@ -510,7 +613,7 @@
     background: url("../img/easy_for.svg") no-repeat center;
     width: 50%;
     height: auto;
-    animation: motion-interview 2s ease-out ;
+    animation: motion-interview 2s ease-out;
 
     @keyframes motion-interview {
       0% {
@@ -530,7 +633,7 @@
       min-height: 100px;
     }
     @media (max-width: 375px) {
-     background-size: 70%;
+      background-size: 70%;
     }
   }
 }
@@ -570,6 +673,7 @@
         border-right: 0;
       }
     }
+
     .interview__answer-part2 {
 
       @media (max-width: 768px) {
@@ -663,8 +767,8 @@
       min-height: 377px;
     }
 
-      @media (max-width: 480px) {
-        min-height: 100px;
+    @media (max-width: 480px) {
+      min-height: 100px;
     }
   }
 
