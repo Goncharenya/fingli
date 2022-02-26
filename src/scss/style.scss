@@ -704,7 +704,7 @@ button {
   position: absolute;
   top: 0;
   left: 40.5%;
-  z-index: 1000;
+  z-index: 10;
 
   @media (max-width: 768px) {
     display: none;
@@ -1465,6 +1465,8 @@ button {
   justify-content: space-between;
   align-items: center;
   overflow: scroll;
+  max-width: 1430px;
+
 
   @media (max-width: 886px) {
     //flex-wrap: wrap;
@@ -2278,23 +2280,25 @@ button {
 
 
 .popup {
-  position: absolute;
-  right: 13%;
-  top: -40px;
-  width: 1068px;
-  min-height: 725px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   display: none;
   z-index: 1000;
-  box-shadow: 0 0 50px #000000;
+  background: rgba(0, 0, 0, .4);
 
   .popup__start-project {
     background: $basicDarkGrey;
+    width: 1280px;
+    margin: auto;
+
+    @media (max-width: 1300px) {
+      width: 90%;
+    }
   }
 
-  @media (max-width: 1280px) {
-    width: 980px;
-    min-height: 725px;
-  }
 
   @media (max-width: 768px) {
     width: 100%;
@@ -2316,6 +2320,8 @@ button {
     display: flex;
     padding-top: 120px;
     padding-bottom: 120px;
+    margin-top: 15%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .7);
 
     &:after {
       content: "";
@@ -2337,7 +2343,9 @@ button {
       min-width: 672px;
 
       @media (max-width: 1280px) {
-        min-width: 95%;
+        min-width: 0;
+        width: 70%;
+        margin-left: 140px;
       }
 
     }
@@ -2353,6 +2361,17 @@ button {
       margin-bottom: 3rem;
       padding: 0 1rem 0 0;
 
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+      }
+
+      @media (max-width: 768px) {
+        margin-bottom: 1rem;
+      }
+
 
       &::placeholder {
         color: $basicWhite;
@@ -2361,9 +2380,14 @@ button {
         line-height: 87px;
         transition: .3s;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1100px) {
           font-size: 48px;
           line-height: 58px;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 32px;
+          line-height: 38px;
         }
       }
 
@@ -2388,6 +2412,11 @@ button {
       color: $basicWhite;
       margin-left: 40px;
       transition: .3s;
+      padding-right: 1rem;
+
+      @media (max-width: 768px) {
+        margin-bottom: 2rem;
+      }
     }
 
     .popup__checkbox + label:after {
@@ -2422,12 +2451,20 @@ button {
     .popup__checkbox + label:hover:after {
       border: 1px solid $basicRed;
     }
+
+    .popup__checkbox + label:active {
+      border: 1px solid $basicRed;
+    }
   }
 
 
   .popup__box-item--black {
     .popup__svg-right {
       margin-left: -3px;
+
+      @media (max-width: 1100px) {
+        position: absolute;
+      }
     }
   }
 
@@ -2474,13 +2511,18 @@ button {
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
     .popup__submit-btn {
       width: 180px;
       height: 50px;
       background-color: $basicWhite;
       background-image: url("../img/arrow_partners.svg");
       background-repeat: no-repeat;
-      background-position: -30px 50%;
+      background-position: -35px 50%;
       transition: .3s;
 
       &:hover {
@@ -2488,7 +2530,11 @@ button {
       }
 
       &:focus {
-        background-position: 100% 50%;
+        background-position: 98% 50%;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
       }
     }
   }

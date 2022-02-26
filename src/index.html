@@ -5,9 +5,6 @@
     <title>FinGli</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="js/carousel/owl.carousel.min.css">
-
-    <link rel="stylesheet" href="js/carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 
 </head>
@@ -449,48 +446,7 @@
             </div>
         </div>
 
-        <div class="popup">
-            <div class="popup__start-project">
-                <div class="popup__box">
-                    <button class="popup__close">
-                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M27.3616 2.11264L29.3723 4.18424C29.551 4.36838 29.551 4.55253 29.3723 4.73667L5.78038 29.0435C5.60165 29.2276 5.42292 29.2276 5.2442 29.0435L3.23353 26.9719C3.0548 26.7877 3.0548 26.6036 3.23352 26.4194L26.8254 2.11264C27.0041 1.9285 27.1829 1.9285 27.3616 2.11264Z"
-                                  fill="white"/>
-                            <path d="M6.31655 2.66537L28.8361 25.8673C29.0148 26.0515 29.0148 26.2356 28.8361 26.4197L26.8254 28.4913C26.6467 28.6755 26.468 28.6755 26.2892 28.4913L3.7697 5.2894C3.59097 5.10526 3.59097 4.92112 3.7697 4.73698L5.78037 2.66537C5.9591 2.48123 6.13783 2.48123 6.31655 2.66537Z"
-                                  fill="white"/>
-                        </svg>
 
-                    </button>
-                    <div class="popup__box-item popup__box-item--white">
-                        <svg class="popup__svg popup__svg-left" viewBox="0 0 120 549" width="120" height="549">
-                            <use xlink:href="img/sprite.svg#popup_owl_black"></use>
-                        </svg>
-                    </div>
-                    <div class="popup__box-item popup__box-item--black">
-                        <svg class="popup__svg popup__svg-right" viewBox="0 0 120 549" width="120" height="549">
-                            <use xlink:href="img/sprite.svg#popup_owl_white"></use>
-                        </svg>
-                        <div class="popup__form-box">
-                            <form action="" method="post" name="popup-form" class="popup__form">
-                                <input type="text" class="popup__input" name="name" placeholder="Имя" id="popup-name">
-                                <label for="popup-name" class="popup__label"></label>
-                                <input type="number" class="popup__input" name="phone" placeholder="Телефон" id="popup-phone">
-                                <label for="popup-phone" class="popup__label"></label>
-                                <input type="email" class="popup__input" name="name" placeholder="Почта" id="popup-email">
-                                <label for="popup-email" class="popup__label"></label>
-
-                                <div class="popup__submit">
-                                    <input type="checkbox" id="approval" class="visually-hidden popup__checkbox">
-                                    <label for="approval" class="approval">Даю согласие на передачу и обработку персональных
-                                        данных</label>
-                                    <button type="submit" class="popup__submit-btn"></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
 
@@ -674,39 +630,52 @@
 
 <!--popup-->
 
+<div class="popup">
+    <div class="popup__start-project">
+        <div class="popup__box">
+            <button class="popup__close">
+                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.3616 2.11264L29.3723 4.18424C29.551 4.36838 29.551 4.55253 29.3723 4.73667L5.78038 29.0435C5.60165 29.2276 5.42292 29.2276 5.2442 29.0435L3.23353 26.9719C3.0548 26.7877 3.0548 26.6036 3.23352 26.4194L26.8254 2.11264C27.0041 1.9285 27.1829 1.9285 27.3616 2.11264Z"
+                          fill="white"/>
+                    <path d="M6.31655 2.66537L28.8361 25.8673C29.0148 26.0515 29.0148 26.2356 28.8361 26.4197L26.8254 28.4913C26.6467 28.6755 26.468 28.6755 26.2892 28.4913L3.7697 5.2894C3.59097 5.10526 3.59097 4.92112 3.7697 4.73698L5.78037 2.66537C5.9591 2.48123 6.13783 2.48123 6.31655 2.66537Z"
+                          fill="white"/>
+                </svg>
 
+            </button>
+            <div class="popup__box-item popup__box-item--white">
+                <svg class="popup__svg popup__svg-left" viewBox="0 0 120 549" width="120" height="549">
+                    <use xlink:href="img/sprite.svg#popup_owl_black"></use>
+                </svg>
+            </div>
+            <div class="popup__box-item popup__box-item--black">
+                <svg class="popup__svg popup__svg-right" viewBox="0 0 120 549" width="120" height="549">
+                    <use xlink:href="img/sprite.svg#popup_owl_white"></use>
+                </svg>
+                <div class="popup__form-box">
+                    <form action="" method="post" name="popup-form" class="popup__form">
+                        <input type="text" class="popup__input" name="name" placeholder="Имя" id="popup-name">
+                        <label for="popup-name" class="popup__label"></label>
+                        <input type="tel" class="popup__input" name="phone" placeholder="Телефон" id="popup-phone">
+                        <label for="popup-phone" class="popup__label"></label>
+                        <input type="email" class="popup__input" name="name" placeholder="Почта" id="popup-email">
+                        <label for="popup-email" class="popup__label"></label>
 
-
-<!--//slider-->
-
-
-<script src="js/jquery.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-
+                        <div class="popup__submit">
+                            <input type="checkbox" id="approval" class="visually-hidden popup__checkbox">
+                            <label for="approval" class="approval">Даю согласие на передачу и обработку персональных
+                                данных</label>
+                            <button type="submit" class="popup__submit-btn"></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="js/main_menu.js"></script>
 <script src="js/popup_start-project.js"></script>
 <script src="js/accordion.js"></script>
-<script>
-    $(document).ready(function () {
 
-        let owl = $('.owl-carousel');
-        owl.owlCarousel({
-            items: 1,
-            loop: false,
-            margin: 30,
-            autoplayTimeout: 2500,
-            autoplayHoverPause: true,
-            autoWidth: true,
-        });
-
-        $('.play').on('click', function () {
-            owl.trigger('play.owl.autoplay', [1000])
-        })
-        $('.stop').on('click', function () {
-            owl.trigger('stop.owl.autoplay')
-        })
-    })
-</script>
 </body>
 </html>
