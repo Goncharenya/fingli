@@ -593,6 +593,7 @@ button {
   p {
     margin: 0;
     text-align: right;
+    padding-top: 1rem;
 
     @media (max-width: 768px) {
       letter-spacing: 2px;
@@ -2403,7 +2404,6 @@ button {
         border-bottom: 2px solid $basicRed;
       }
     }
-
 
     .approval {
       font-size: 12px;

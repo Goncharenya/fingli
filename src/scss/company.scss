@@ -576,14 +576,14 @@
   color: $basicWhite;
   padding: 60px 40px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     padding: 40px 20px;
   }
 
   .interview__questions {
     width: 50%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       width: 100%;
     }
   }
@@ -618,24 +618,11 @@
     background: url("../img/easy_for.svg") no-repeat center;
     width: 50%;
     height: auto;
-    animation: motion-interview 2s ease-out;
 
-    @keyframes motion-interview {
-      0% {
-        transform: translateY(-400px);
-
-      }
-      50% {
-        transform: translateY(200px);
-      }
-      100% {
-        transform: translateY(0px);
-      }
-    }
-
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       width: 100%;
       min-height: 100px;
+      margin-top: 1rem;
     }
     @media (max-width: 375px) {
       background-size: 70%;
@@ -668,6 +655,7 @@
       padding-right: 20px;
       margin-right: 20px;
       letter-spacing: .02em;
+      width: 50%;
 
       @media (max-width: 768px) {
         width: 50%;
@@ -680,6 +668,7 @@
     }
 
     .interview__answer-part2 {
+      width: 50%;
 
       @media (max-width: 768px) {
         width: 50%;
@@ -700,7 +689,7 @@
     height: auto;
 
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       min-height: 174px;
       overflow: hidden;
       width: 100%;
@@ -714,7 +703,7 @@
 
   .interview__wrapper {
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       flex-direction: column;
     }
   }

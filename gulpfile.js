@@ -10,9 +10,9 @@ const csso = require('postcss-csso');
 const rename = require('gulp-rename');
 const jsmin = require('gulp-terser');
 const del = require("del");
-const imagemin = require("gulp-imagemin");
-const webp = require('gulp-webp');
-const svgStore = require('gulp-svgstore');
+//const imagemin = require("gulp-imagemin");
+//const webp = require('gulp-webp');
+//const svgStore = require('gulp-svgstore');
 
 
 // Styles
@@ -85,35 +85,35 @@ const clean = () => {
     return del("build");
 };
 
-const optimizeImages = () => {
-    return gulp.src('src/img/**/*.{jpg,png}')
-        .pipe(imagemin([
-            imagemin.mozjpeg({progressive: true}),
-            imagemin.optipng({optimizationLevel: 3}),
-            imagemin.svgo()
-        ]))
-        .pipe(gulp.dest("build/img"))
-}
+// const optimizeImages = () => {
+//     return gulp.src('src/img/**/*.{jpg,png}')
+//         .pipe(imagemin([
+//             imagemin.mozjpeg({progressive: true}),
+//             imagemin.optipng({optimizationLevel: 3}),
+//             imagemin.svgo()
+//         ]))
+//         .pipe(gulp.dest("build/img"))
+// }
 
 const copyImages = () => {
     return gulp.src('src/img/**/*.{jpg,png,svg}')
         .pipe(gulp.dest('build/img'));
 }
 
-const createWebp = () => {
-    return gulp.src('src/img/**/*{jpg,png}')
-        .pipe(webp({quality: 90}))
-        .pipe(gulp.dest('build/img'));
-}
+// const createWebp = () => {
+//     return gulp.src('src/img/**/*{jpg,png}')
+//         .pipe(webp({quality: 90}))
+//         .pipe(gulp.dest('build/img'));
+// }
 
-const createSprite = () => {
-    return gulp.src('src/img/icon/*.svg')
-        .pipe(svgStore({
-            inlineSvg: true
-        }))
-        .pipe(rename('sprite_v2.svg'))
-        .pipe(gulp.dest('build/img'));
-}
+// const createSprite = () => {
+//     return gulp.src('src/img/icon/*.svg')
+//         .pipe(svgStore({
+//             inlineSvg: true
+//         }))
+//         .pipe(rename('sprite_v2.svg'))
+//         .pipe(gulp.dest('build/img'));
+// }
 
 const copyOther = (done) => {
     gulp.src([
@@ -132,7 +132,7 @@ const copyOther = (done) => {
 const build = gulp.series(
     clean,
     copyOther,
-    copyImages,
+   // copyImages,
     gulp.parallel(
         styles,
         buildHtml,
@@ -167,12 +167,12 @@ exports.default = gulp.series(
 exports.build = gulp.series(
     clean,
     copyOther,
-    optimizeImages,
+    //optimizeImages,
     gulp.parallel(
         styles,
         buildHtml,
         buildJs,
-        createSprite,
-        createWebp
+        // createSprite,
+        // createWebp
     )
 );
