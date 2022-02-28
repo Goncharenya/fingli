@@ -2292,28 +2292,14 @@ button {
 
   .popup__start-project {
     background: $basicDarkGrey;
-    width: 1280px;
-    margin: auto;
+    width: 60%;
+    margin: 15% auto;
+    max-width: 1280px;
+    // min-height: 613px;
 
-    @media (max-width: 1300px) {
-      width: 90%;
+    @media (max-width: 596px) {
+      width: 80%;
     }
-  }
-
-
-  @media (max-width: 768px) {
-    width: 100%;
-    min-height: 1024px;
-  }
-
-  @media (max-width: 480px) {
-    width: 100%;
-    min-height: 320px;
-  }
-
-  @media (max-width: 320px) {
-    width: 100%;
-    min-height: 568px;
   }
 
   .popup__box {
@@ -2321,8 +2307,13 @@ button {
     display: flex;
     padding-top: 120px;
     padding-bottom: 120px;
-    margin-top: 15%;
+    //margin-top: 15%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .7);
+
+    @media (max-width: 1024px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
 
     &:after {
       content: "";
@@ -2334,61 +2325,94 @@ button {
       left: 60px;
       right: 60px;
       box-shadow: 2px 1px 0 $basicDarkGrey;
+
+      @media (max-width: 400px) {
+        left: 30;
+      }
     }
 
-    .popup__form {
-      display: flex;
-      flex-direction: column;
-      margin-left: 60px;
-      margin-top: 60px;
-      min-width: 672px;
+    .popup__form-box {
+      width: fit-content;
 
-      @media (max-width: 1280px) {
-        min-width: 0;
-        width: 70%;
-        margin-left: 140px;
+      .popup__form {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 60px;
+        width: 30vw;
+        max-width: 657px;
+
+        @media (max-width: 1280px) {
+          margin-left: 30px;
+        }
+
+        @media (max-width: 1100px) {
+          margin-left: 87px;
+        }
+
+        @media (max-width: 768px) {
+          margin-left: 20px;
+          margin-top: 10px;
+        }
+
+        @media (max-width: 596px) {
+          margin-top: 4rem;
+          width: 48vw;
+        }
       }
-
     }
 
     .popup__input {
       color: $basicWhite;
-      font-size: 30px;
+      font-size: 42px;
       line-height: 87px;
       background: none;
       border: none;
       border-bottom: 2px solid $basicWhite;
       transition: .3s;
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
       padding: 0 1rem 0 0;
 
       &:-webkit-autofill,
       &:-webkit-autofill:hover,
       &:-webkit-autofill:focus,
-      &:-webkit-autofill:active{
-        -webkit-box-shadow: 0 0 0 30px white inset !important;
+      &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 1000px $basicDarkGrey inset;
+        -webkit-text-fill-color: $basicWhite;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 592px) {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 400px) {
+        font-size: 24px;
+        line-height: 19px;
         margin-bottom: 1rem;
+        border-bottom: 1px solid $basicWhite;
       }
 
 
       &::placeholder {
         color: $basicWhite;
         text-transform: uppercase;
-        font-size: 72px;
-        line-height: 87px;
+        font-size: 42px;
+        line-height: 67px;
         transition: .3s;
 
         @media (max-width: 1100px) {
-          font-size: 48px;
+          font-size: 40px;
           line-height: 58px;
         }
 
         @media (max-width: 768px) {
           font-size: 32px;
           line-height: 38px;
+        }
+
+        @media (max-width: 592px) {
+          font-size: 24px;
+          line-height: 19px;
         }
       }
 
@@ -2414,8 +2438,13 @@ button {
       transition: .3s;
       padding-right: 1rem;
 
-      @media (max-width: 768px) {
+      @media (max-width: 876px) {
         margin-bottom: 2rem;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 9px;
+        line-height: 11px;
       }
     }
 
@@ -2452,9 +2481,6 @@ button {
       border: 1px solid $basicRed;
     }
 
-    .popup__checkbox + label:active {
-      border: 1px solid $basicRed;
-    }
   }
 
 
@@ -2464,6 +2490,9 @@ button {
 
       @media (max-width: 1100px) {
         position: absolute;
+      }
+      @media (max-width: 400px) {
+        opacity: .2;
       }
     }
   }
@@ -2476,6 +2505,18 @@ button {
     margin-bottom: -120px;
     padding-left: 60px;
 
+    @media (max-width: 1024px) {
+      padding-top: 60px;
+      margin-top: -60px;
+      padding-bottom: 0;
+      margin-bottom: -60px;
+      padding-left: 30px;
+    }
+
+    @media (max-width: 592px) {
+      padding-left: 10px;
+    }
+
     .popup__svg-left {
       margin-right: -3px;
 
@@ -2485,8 +2526,27 @@ button {
         width: 100%;
         background: $basicDarkGrey;
         height: 1px;
-
       }
+
+      @media (max-width: 400px) {
+        opacity: 1;
+      }
+    }
+  }
+
+  .popup__svg {
+    @media (max-width: 1100px) {
+      width: 80px;
+    }
+
+    @media (max-width: 768px) {
+      width: 90px;
+      opacity: .2;
+    }
+
+    @media (max-width: 400px) {
+      width: 60px;
+      height: auto;
     }
   }
 
@@ -2504,6 +2564,11 @@ button {
     align-items: center;
     width: 42px;
     height: 40px;
+
+    @media (max-width: 596px) {
+      right: 6%;
+    }
+
   }
 
   .popup__submit {
@@ -2511,9 +2576,10 @@ button {
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 768px) {
+    @media (max-width: 876px) {
       flex-direction: column;
       align-items: flex-start;
+      margin-top: 1rem;
     }
 
     .popup__submit-btn {
