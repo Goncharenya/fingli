@@ -1,6 +1,7 @@
 $lightGrey: #e5e5e5;
 $basicDarkGrey: #141312;
-$basicRed: #FF3E3E;
+//$basicRed: #FF3E3E;
+$basicRed: #ce3758;
 $opacity_40_DarkGrey: rgba(20, 19, 18, 0.4);
 $opacity_60_DarkGrey: rgba(20, 19, 18, 0.6);
 $basicWhite: #ffffff;
@@ -125,7 +126,7 @@ button {
 
 .body {
   font-family: 'inter', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   width: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -146,16 +147,18 @@ button {
 }
 
 .title-page {
-  font-size: 6vw;
-  line-height: 90px;
+  font-size: 5vw;
+  //line-height: 90px;
+  line-height: 1.2;
   font-weight: 300;
   color: $basicDarkGrey;
-  border-bottom: 2px solid $basicDarkGrey;
+  //border-bottom: 2px solid $basicDarkGrey;
+  border-bottom: 2px solid $basicRed;
   text-transform: uppercase;
   margin-top: 6rem;
 
   @media (min-width: 1440px) {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   @media (max-width: 768px) {
@@ -178,16 +181,20 @@ button {
 
 .btn-start {
   padding: 10px 20px;
-  border: 1px solid $basicDarkGrey;
+  //border: 1px solid $basicDarkGrey;
   transition: .3s;
+  background: $basicRed;
+  color: white;
 
   &:hover {
-    border: 1px solid $basicRed;
-    color: $basicRed;
+    //border: 1px solid $basicRed;
+    //color: $basicRed;
+    color: white !important;
+    zoom: 1.1;
   }
 
   &:active {
-    background: rgba(255, 62, 62, 0.05);
+    //background: rgba(255, 62, 62, 0.05);
   }
 
   @media (max-width: 480px) {
@@ -220,8 +227,8 @@ button {
   }
 
   .menu__item {
-    font-weight: 100;
-    font-size: 0.75rem;
+    font-weight: 300;
+    font-size: 0.8rem;
     text-transform: uppercase;
     color: $basicDarkGrey;
     border-bottom: 1px solid transparent;
@@ -486,7 +493,7 @@ button {
 //---------slogan
 
 .slogan__item {
-  margin-top: 4.5rem;
+  //margin-top: 4.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -505,10 +512,32 @@ button {
 }
 
 
+
+.slogan {
+  overflow: hidden;
+  //background: url('/img/bg3.png') no-repeat 10% / 50%;
+  background: url('/img/bg4.jpg') no-repeat center / cover;
+  padding: 2em 4em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  min-height: 40vh;
+  margin-top: 10px;
+
+  @media (min-width: 768px) {
+    min-height: 60vh;
+  }
+
+  @media (min-width: 1280px) {
+    min-height: 80vh;
+  }
+}
 .slogan__item-question {
+  margin-bottom: 4em;
 
   .slogan__icon-owl {
     animation: slogan-question__motion 1s ease-out;
+    fill: $basicRed;
 
     @keyframes slogan-question__motion {
       0% {
@@ -552,10 +581,6 @@ button {
   }
 }
 
-.slogan {
-  overflow: hidden;
-}
-
 .slogan__item-answer {
   flex-direction: row-reverse;
   padding-bottom: 10px;
@@ -563,7 +588,12 @@ button {
   animation: slogan-answer__motion 2s ease-out;
   animation-delay: 2s;
   animation-fill-mode: both;
+  text-align: right;
+  margin-bottom: 1em;
 
+  .slogan__text {
+    color: rgba(255,255,255,.65);
+  }
 
   @keyframes slogan-answer__motion {
     0% {
@@ -579,15 +609,22 @@ button {
   }
 }
 
+.slogan__icon-robot {
+  stroke: $basicRed;
+  fill: transparent;
+}
+
 .slogan__text {
-  font-size: 6vw;
-  line-height: 90px;
-  color: $basicDarkGrey;
+  font-size: 4vw;
+  //line-height: 90px;
+  line-height: 1.3;
+  //color: $basicDarkGrey;
+  color: white;
   font-weight: bolder;
 
 
   @media (min-width: 1440px) {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
   p {
@@ -602,22 +639,22 @@ button {
 
 
   @media (max-width: 1110px) {
-    line-height: 89px;
+    //line-height: 89px;
     font-weight: 400;
   }
 
   @media (max-width: 900px) {
-    line-height: 70px;
+    //line-height: 70px;
     font-weight: 400;
   }
 
   @media (max-width: 768px) {
-    line-height: 58px;
+    //line-height: 58px;
     font-weight: 400;
   }
   @media (max-width: 480px) {
-    line-height: 29px;
-    letter-spacing: 1px;
+    //line-height: 29px;
+    //letter-spacing: 1px;
   }
 }
 
@@ -626,8 +663,9 @@ button {
   display: flex;
   justify-content: flex-end;
   padding-top: 25px;
-  margin-bottom: 7.5rem;
-  color: $opacity_40_DarkGrey;
+  //margin-bottom: 7.5rem;
+  //color: $opacity_40_DarkGrey;
+  color: rgba(255,255,255,.6);
 
   @media (max-width: 768px) {
     font-size: .75rem;
@@ -644,7 +682,8 @@ button {
     position: absolute;
     width: 71%;
     height: 1px;
-    background: rgba(20, 19, 18, 0.4);
+    //background: rgba(20, 19, 18, 0.4);
+    background: rgba(255,255,255,.6);
     top: 14px;
 
     @media (max-width: 768px) {
@@ -665,6 +704,7 @@ button {
   width: 100%;
   height: 112px;
   background: $basicDarkGrey;
+  //background: url('/img/bg4.jpg') no-repeat center / cover;
 
   &::after {
     content: "";
@@ -687,7 +727,7 @@ button {
     padding: 1rem;
     font-size: 0.875rem;
     font-weight: 500;
-    line-height: 23.4px;
+    line-height: 1.6;
 
     @media (max-width: 768px) {
       width: 75%;
@@ -722,8 +762,8 @@ button {
   }
 
   p {
-    line-height: 27.2px;
-    letter-spacing: .8px;
+    line-height: 1.6;
+    //letter-spacing: .8px;
     padding-top: 1.5rem;
 
     @media (max-width: 480px) {
@@ -891,7 +931,7 @@ button {
 
 .services__title-list {
   font-size: 1rem;
-  line-height: 27px;
+  line-height: 1.6;
   margin-top: 0;
   font-weight: 200;
 
@@ -943,10 +983,14 @@ button {
       background-image: url("../img/arrow_white.svg");
       background-repeat: no-repeat;
       background-position: 96%;
+      padding-left: 1em;
+      margin-left: -1em;
+      position: relative;
+      //top: -1px;
     }
 
     &:hover a {
-      padding-left: 1rem;
+      //padding-left: 1rem;
       color: #ffffff;
     }
 
@@ -1158,10 +1202,11 @@ button {
 
   .resolution__desk {
     padding: 1rem;
-    border: 1px solid #141312;
+    //border: 1px solid #141312;
     font-size: .875rem;
-    line-height: 17px;
+    line-height: 1.5;
     width: fit-content;
+    background: #f0f0f0;
 
     @media (max-width: 952px) {
       justify-content: start;
@@ -1229,8 +1274,9 @@ button {
   padding-right: 2rem;
   box-sizing: border-box;
   padding-left: 1rem;
-  font-size: .875rem;
-  line-height: 24px;
+  //font-size: .875rem;
+  //line-height: 24px;
+  line-height: 1.6;
 
   @media (max-width: 768px) {
     padding-left: 0;
@@ -1299,6 +1345,10 @@ button {
     background-image: url(../img/owl_white.svg), url(../img/plus_white.svg);
     background-repeat: no-repeat;
     background-position: 91%, 96%;
+    padding-left: 1em;
+    margin-left: -1em;
+    position: relative;
+    //top: -1px;
 
     @media (max-width: 320px) {
       background-position: 80%, 96%;
@@ -1306,7 +1356,7 @@ button {
   }
 
   &:hover h3 {
-    padding-left: 1rem;
+    //padding-left: 1rem;
     color: #ffffff;
   }
 }
@@ -1320,6 +1370,11 @@ button {
 ._active {
   .accordion__description {
     display: block;
+
+    p {
+      line-height: 1.6;
+      max-width: 1000px;
+    }
   }
 
   .accordion__title {
@@ -1330,7 +1385,7 @@ button {
 
     h3 {
       // color: #ffffff;
-      padding-left: 1rem;
+      //padding-left: 1rem;
     }
 
     &:hover {
@@ -1358,6 +1413,7 @@ button {
 
   .portfolio__item {
     width: 100%;
+    margin-bottom: 3em;
 
     @media (max-width: 480px) {
       display: flex;
@@ -1420,9 +1476,11 @@ button {
   .tags__item {
     margin-top: .5rem;
     margin-right: 1rem;
-    color: $opacity_60_DarkGrey;
+    //color: $opacity_60_DarkGrey;
+    color: gray;
     padding: 5px 10px;
-    border: 1px solid $opacity_60_DarkGrey;
+    //border: 1px solid $opacity_60_DarkGrey;
+    border: 1px solid silver;
     font-size: 12px;
     line-height: 15px;
   }
@@ -1430,18 +1488,19 @@ button {
 
 .portfolio__title {
   font-size: 1.5rem;
-  line-height: 41px;
+  line-height: 1.6;
   font-weight: 100;
+  margin-top: .5em;
 
   @media (max-width: 480px) {
     margin: 0;
     font-size: 20px;
-    line-height: 24px;
+    //line-height: 24px;
   }
 
   @media (max-width: 320px) {
     font-size: 1rem;
-    line-height: 19px;
+    //line-height: 19px;
     padding-right: 20px;
   }
 
@@ -1774,12 +1833,14 @@ button {
 
   .blog__data,
   .blog__theme {
-    color: $opacity_60_DarkGrey;
-    border: 1px solid $opacity_60_DarkGrey;
+    //color: $opacity_60_DarkGrey;
+    color: gray;
+    //border: 1px solid $opacity_60_DarkGrey;
+    border: 1px solid silver;
     padding: 4px 9px;
     font-size: 0.75rem;
     line-height: 15px;
-    font-weight: 100;
+    font-weight: 300;
   }
 
   .blog__data {
@@ -1816,13 +1877,15 @@ button {
   &:hover {
     background-color: $basicDarkGrey;
     color: $basicWhite;
-    padding-left: 20px;
+    //padding-left: 20px;
     background-image: url("../img/arrow_white_hover.svg");
     background-repeat: no-repeat;
     background-position: 98%;
+    padding-left: 1em;
+    margin-left: -1em;
 
     @media (max-width: 400px) {
-      padding-left: 10px;
+      //padding-left: 10px;
     }
   }
 
@@ -1985,9 +2048,12 @@ button {
 
   button {
     margin: 5px 10px;
-    color: $opacity_40_DarkGrey;
-    border: 1px solid $opacity_40_DarkGrey;
+    //color: $opacity_40_DarkGrey;
+    color: gray;
+    //border: 1px solid $opacity_40_DarkGrey;
+    border: 1px solid silver;
     padding: 5px 10px;
+    font-weight: 100;
 
     &:last-child {
       margin-right: 0;
@@ -1999,7 +2065,9 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid $basicDarkGrey;
+  //border-bottom: 1px solid $basicDarkGrey;
+  border-bottom: 1px solid silver;
+  color: gray;
   background: url("../img/arrow.svg") no-repeat 98%;
   cursor: pointer;
   transition: .5s;
@@ -2007,7 +2075,8 @@ button {
   &:hover {
     background-color: $basicDarkGrey;
     color: $basicWhite;
-    padding-left: 20px;
+    padding-left: 1em;
+    margin-left: -1em;
     background-image: url("../img/arrow_white_hover.svg");
     background-repeat: no-repeat;
     background-position: 98%;
@@ -2024,10 +2093,10 @@ button {
   }
 
   &:hover .vacancy__tags {
-    margin-right: 100px;
+    //margin-right: 100px;
 
     @media (max-width: 840px) {
-      margin-right: 70px;
+      //margin-right: 70px;
     }
   }
 }
