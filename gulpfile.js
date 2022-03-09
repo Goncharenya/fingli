@@ -120,6 +120,7 @@ const copyOther = (done) => {
         "src/fonts/*.{woff,woff2}",
         "src/*.ico",
         "src/img/*.svg",
+        "src/img/favicons/*",
         "src/carousel/*.*",
         "!src/img/icons/*.svg"
     ], {
