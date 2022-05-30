@@ -176,6 +176,13 @@ button {
   }
 }
 
+//-------------header
+
+.header {
+  background: url('../img/bg_fingli.jpg') no-repeat center / cover;
+  margin-top: 10px;
+  opacity: .7;
+}
 
 //---------navigation
 
@@ -516,7 +523,7 @@ button {
 .slogan {
   overflow: hidden;
   //background: url('/img/bg3.png') no-repeat 10% / 50%;
- background: url('../img/finglibg3.jpg');
+// background: url('../img/finglibg3.jpg') no-repeat center / cover;
   //background: url('../img/fingli_bg_3.jpeg') no-repeat center / cover;
   padding: 2em 4em;
   display: flex;
