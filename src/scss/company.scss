@@ -1,6 +1,9 @@
 //slogan
 .header-company {
   overflow: hidden;
+  .slogan__text {
+    color: $basicDarkGrey;
+  }
 }
 
 .header-company__slogan {
